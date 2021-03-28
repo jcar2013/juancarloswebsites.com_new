@@ -90,7 +90,7 @@
       <find>Comments</find>
     </findStrings>
     <dirStrings>
-      <dir>C:\WinNMP\WWW\BlogNoFrameworkMVC</dir>
+      <dir>/var/www/juancarloswebsites</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -132,12 +132,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="BlogNoFrameworkMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlogNoFrameworkMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="juancarloswebsites" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juancarloswebsites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BlogNoFrameworkMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlogNoFrameworkMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="juancarloswebsites" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juancarloswebsites" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
