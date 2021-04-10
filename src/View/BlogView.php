@@ -35,6 +35,4 @@ class BlogView
         $this->content = "Blog sample.
         Click <a href ='/about'>here</a> to see";
     }
-
-
 }

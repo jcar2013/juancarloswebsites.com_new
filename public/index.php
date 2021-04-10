@@ -61,8 +61,14 @@ switch ($routeAction) {
         break;
 
     case 'list':
-    default:
+        // default:
         $controllerName = 'BlogController';
+        $action = 'indexAction';
+        break;
+
+    case '/':
+    default:
+        $controllerName = 'juancarloswebsitesController';
         $action = 'indexAction';
         break;
 }
