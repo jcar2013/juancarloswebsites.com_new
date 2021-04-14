@@ -68,8 +68,10 @@ switch ($routeAction) {
 
     case '/':
     default:
-        $controllerName = 'juancarloswebsitesController';
+        $controllerName = 'BlogController';
         $action = 'indexAction';
+        // $controllerName = 'juancarloswebsitesController';
+        // $action = 'indexAction';
         break;
 }
 

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Test PHP Blog application without framework</title>
+    <title>JuanCarlosWebsites</title>
 
 
     <meta charset="utf-8">
@@ -474,15 +474,15 @@
 
 
 
-    <div class="container">
-        <div class="row">
-            <!-- Page header -->
-            <div class="col-md-4">
+    <!-- <div class="container">
+        <div class="row"> -->
+    <!-- Page header -->
+    <!-- <div class="col-md-4">
                 <div class="app-caption"><a href="/"><img src="./img/Check24_Logo.png" height="60" alt="Check24 Logo" /></a> Blog Name</div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12"> -->
 
 
 
@@ -492,45 +492,45 @@
 
 
 
-                <nav class="navbar navbar-default">
+    <!-- <nav class="navbar navbar-default">
                     <div class="container-fluid">
 
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav"> -->
 
-                            <?php
-                            if ($_SERVER['REQUEST_URI'] == "/")
-                                echo "<li class='active'><a href='#'>Home</a></li>";
-                            else
-                                echo "<li><a href='/'>Home</a></li>";
+    <?php
+    // if ($_SERVER['REQUEST_URI'] == "/")
+    //     echo "<li class='active'><a href='#'>Home</a></li>";
+    // else
+    //     echo "<li><a href='/'>Home</a></li>";
 
-                            if (!isset($_SESSION['adminid']) or !$_SESSION['adminid']) {
-                                if ($_SERVER['REQUEST_URI'] == "/login")
-                                    echo "<li class='active'><a href='#'>Login</a></li>";
-                                else
-                                    echo "<li><a href='/login'>Login</a></li>";
-                            }
-
-
-
-                            if (isset($_SESSION['adminid']) and $_SESSION['adminid'] > 0) {
-                                if ($_SERVER['REQUEST_URI'] == "/?action=addpost")
-                                    echo "<li class='active'><a href='#'>Add entry</a></li>";
-                                else
-                                    echo "<li><a href='/?action=addpost'>Add entry</a></li>";
+    // if (!isset($_SESSION['adminid']) or !$_SESSION['adminid']) {
+    //     if ($_SERVER['REQUEST_URI'] == "/login")
+    //         echo "<li class='active'><a href='#'>Login</a></li>";
+    //     else
+    //         echo "<li><a href='/login'>Login</a></li>";
+    // }
 
 
-                                echo "<li><a href='/logout'>Logout</a></li>";
-                            }
+
+    // if (isset($_SESSION['adminid']) and $_SESSION['adminid'] > 0) {
+    //     if ($_SERVER['REQUEST_URI'] == "/?action=addpost")
+    //         echo "<li class='active'><a href='#'>Add entry</a></li>";
+    //     else
+    //         echo "<li><a href='/?action=addpost'>Add entry</a></li>";
 
 
-                            if ($_SERVER['REQUEST_URI'] == "/about")
-                                echo "<li class='active'><a href='#'>Contacts</a></li>";
-                            else
-                                echo "<li><a href='/about'>Contacts</a></li>";
-                            ?>
-                        </ul>
+    //     echo "<li><a href='/logout'>Logout</a></li>";
+    // }
+
+
+    // if ($_SERVER['REQUEST_URI'] == "/about")
+    //     echo "<li class='active'><a href='#'>Contacts</a></li>";
+    // else
+    //     echo "<li><a href='/about'>Contacts</a></li>";
+    ?>
+    <!-- </ul>
                     </div>
-                </nav>
+                </nav> -->
 
 
 
@@ -538,25 +538,25 @@
 
 
 
-            </div>
+    <!-- </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <!-- Breadcrumbs -->
-                <?php /* echo $this->pageBreadcrumbs()->render(); */ ?>
-            </div>
+            <div class="col-md-12"> -->
+    <!-- Breadcrumbs -->
+    <?php /* echo $this->pageBreadcrumbs()->render(); */ ?>
+    <!-- </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <!-- Page content placeholder -->
-                <?= $this->content; ?>
-            </div>
+            <div class="col-md-12"> -->
+    <!-- Page content placeholder -->
+    <!-- <?= $this->content; ?> -->
+    <!-- </div>
         </div>
         <hr>
         <footer>
             <p>&copy; 2020 by Eugen Kaurov. All rights reserved. <a href="/about">Imprint (contacts)</a></p>
         </footer>
-    </div>
+    </div> -->
     <?php /* = $this->inlineScript() */ ?>
     <script src="js/scripts.js"></script>
 </body>
