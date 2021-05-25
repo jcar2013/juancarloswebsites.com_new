@@ -1,87 +1,55 @@
 <?php
-// Retrieve configuration
-$appConfig = require __DIR__ . '/../config/application.config.php';
 
-// the Application initialisation/entry point.
-$routeAction = $_SERVER["REQUEST_URI"];
-if (isset($_GET['action'])) {
-    $routeAction = $_GET['action'];
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
+
+define('LARAVEL_START', microtime(true));
+
+/*
+|--------------------------------------------------------------------------
+| Check If The Application Is Under Maintenance
+|--------------------------------------------------------------------------
+|
+| If the application is in maintenance / demo mode via the "down" command
+| we will load this file so that any pre-rendered content can be shown
+| instead of starting the framework, which could cause an exception.
+|
+*/
+
+if (file_exists(__DIR__.'/../storage/framework/maintenance.php')) {
+    require __DIR__.'/../storage/framework/maintenance.php';
 }
 
-// router
-switch ($routeAction) {
-    case '/about':
-    case 'about':
-        $controllerName = CmsController::class;
-        $action = 'aboutAction';
-        break;
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| this application. We just need to utilize it! We'll simply require it
+| into the script here so we don't need to manually load our classes.
+|
+*/
 
-    case 'post':
-        $controllerName = 'BlogController';
-        $action = 'postAction';
-        break;
+require __DIR__.'/../vendor/autoload.php';
 
-    case 'addpost':
-        $controllerName = 'BlogController';
-        $action = 'addAction';
-        break;
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
 
-    case 'addpostsubmitted':
-        $controllerName = 'BlogController';
-        $action = 'addpostsubmittedAction';
-        break;
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
-    case 'addcomment':
-        $controllerName = 'BlogController';
-        $action = 'addcommentAction';
-        break;
+$kernel = $app->make(Kernel::class);
 
-    case 'addcommentsubmitted':
-        $controllerName = 'BlogController';
-        $action = 'addcommentsubmittedAction';
-        break;
+$response = tap($kernel->handle(
+    $request = Request::capture()
+))->send();
 
-    case '/login':
-    case 'login':
-        $controllerName = AuthController::class;
-        $action = 'loginAction';
-        break;
-
-
-    case '/loginsubmitted':
-    case 'loginsubmitted':
-        $controllerName = AuthController::class;
-        $action = 'loginsubmittedAction';
-        break;
-
-    case '/logout':
-    case 'logout':
-        $controllerName = AuthController::class;
-        $action = 'logoutAction';
-        break;
-
-    case 'list':
-    default:
-        $controllerName = 'BlogController';
-        $action = 'indexAction';
-        break;
-}
-
-require '../src/Controller/ControllerInterface.php';
-require '../src/Controller/' . $controllerName . '.php';
-require '../src/Model/DbConnectionManager.php';
-require '../src/Model/BlogManager.php';
-require '../src/Model/UserManager.php';
-require '../src/View/BlogView.php';
-
-
-$db = new DbConnectionManager($appConfig);
-$dbConnection = null;
-if ($db) {
-    $dbConnection = $db->getConnection();
-}
-$blogManager = new BlogManager($dbConnection);
-$userManager = new UserManager($dbConnection);
-
-$controller = new $controllerName($blogManager, $userManager);
-$controller->{$action}($_REQUEST);
+$kernel->terminate($request, $response);
