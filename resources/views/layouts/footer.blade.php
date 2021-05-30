@@ -1,11 +1,11 @@
 <footer>
-    <div class="row">
-        <div>
+    <div class="row container-fluid">
+        <div class="col-lg-4">
             <h3>
                 Pages
             </h3>
 
-            <ul class="col-lg-4">
+            <ul class="">
                 <li>
                     <a href="/">
                         Home
@@ -30,12 +30,12 @@
             </ul>
         </div>
 
-        <div>
+        <div class="col-lg-4">
             <h3>
                 Find Us
             </h3>
 
-            <ul class="col-lg-4">
+            <ul class="">
                 <li>
                     <a href="/">
                         What we do
@@ -60,12 +60,12 @@
             </ul>
         </div>
 
-        <div>
+        <div class="col-lg-4">
             <h3>
                 Latest Post
             </h3>
 
-            <ul class="col-lg-4">
+            <ul class="">
                 <li>
                     <a href="/">
                         Whey we love tech
@@ -90,7 +90,9 @@
             </ul>
         </div>
     </div>
-    <p>
-        Copyright 2021 Juancarloswebsites. All Rights Reserved
-    </p>
+    <div class="copyright">
+        <p>
+            Copyright 2021 Juancarloswebsites. All Rights Reserved
+        </p>
+    </div>
 </footer>

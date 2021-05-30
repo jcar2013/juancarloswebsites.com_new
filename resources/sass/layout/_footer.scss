@@ -1,0 +1,29 @@
+footer {
+    background-color: #0a365f;
+    color           : #fff;
+    padding         : 50px 0 50px 0;
+
+    h3 {
+        text-align: center;
+    }
+
+    ul {
+        padding   : 0;
+        list-style: none;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color          : #fff;
+        }
+    }
+
+    div.copyright {
+        border-top: 1px solid white;
+
+        p {
+            width  : 50%;
+            padding: 0 100px 0 100px;
+        }
+    }
+}
