@@ -10040,7 +10040,7 @@ footer div.copyright p {
 }
 
 .background-image {
-  background-image: url("/images/hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/images/hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10052,4 +10052,9 @@ footer div.copyright p {
   /* Text styles */
   text-align: center;
   color: #ffffff;
+}
+.background-image h1 {
+  text-transform: uppercase;
+  text-shadow: black;
+  font-weight: bold;
 }
