@@ -1,16 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image">
+<div class="hero-section">
+    <div>
         <div>
-            <div>
-                <h1>
-                    Do you want to become a developer?
-                </h1>
-                    <a href="/blog">
-                        Read More
-                    </a>
-            </div>
+            <h1>
+                Do you want to become a developer?
+            </h1>
+
+            <a href="/blog" class="btn btn-outline-secondary btn-lg" role="button">
+                Read More
+            </a>
         </div>
     </div>
+</div>
 @endsection

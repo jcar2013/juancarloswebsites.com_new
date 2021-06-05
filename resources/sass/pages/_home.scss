@@ -1,5 +1,5 @@
-.background-image {
-    background              : linear-gradient(0deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.55)), url("/images/hero.jpg");
+.hero-section {
+    background              : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
     background-position     : center center;
     background-repeat       : no-repeat;
     // background-attachment: fixed;
@@ -12,12 +12,20 @@
     align-items    : center;
 
     /* Text styles */
-    text-align: center;
-    color     : #ffffff;
+    font-family   : 'Lato', sans-serif;
+    text-align    : center;
+    color         : #ffffff;
+    text-transform: uppercase;
+    font-weight   : bold;
 
     h1 {
-        text-transform: uppercase;
-        text-shadow   : black;
-        font-weight   : bold;
+        font-weight: 400;
+        font-size  : 3.4rem;
+    }
+
+    a {
+        color       : #fff;
+        border-width: 1.95px;
+
     }
 }

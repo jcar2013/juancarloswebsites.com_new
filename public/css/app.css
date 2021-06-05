@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito&family=Open+Sans+Condensed:ital,wght@1,300&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10039,8 +10039,8 @@ footer div.copyright p {
   padding: 0 100px 0 100px;
 }
 
-.background-image {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/images/hero.jpg");
+.hero-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10050,11 +10050,17 @@ footer div.copyright p {
   justify-content: center;
   align-items: center;
   /* Text styles */
+  font-family: "Lato", sans-serif;
   text-align: center;
   color: #ffffff;
-}
-.background-image h1 {
   text-transform: uppercase;
-  text-shadow: black;
   font-weight: bold;
+}
+.hero-section h1 {
+  font-weight: 400;
+  font-size: 3.4rem;
+}
+.hero-section a {
+  color: #fff;
+  border-width: 1.95px;
 }
