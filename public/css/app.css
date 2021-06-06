@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@600&family=Nunito&family=Open+Sans+Condensed:ital,wght@1,300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@600&family=Nunito&family=Open+Sans+Condensed:ital,wght@1,300...600&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10003,7 +10003,7 @@ h3 {
   }
 }
 .navbar {
-  background-color: #0a365f;
+  background-color: #02212e;
 }
 .navbar a {
   color: #fff;
@@ -10015,7 +10015,7 @@ h3 {
 }
 
 footer {
-  background-color: #0a365f;
+  background-color: #02212e;
   color: #fff;
   padding: 50px 0 50px 0;
 }
