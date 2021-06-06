@@ -1,3 +1,5 @@
+/*----------  Hero Image  ----------*/
+
 .hero-section {
     background              : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
     background-position     : center center;
@@ -27,5 +29,22 @@
         color       : #fff;
         border-width: 1.95px;
 
+    }
+}
+
+/*----------  Hero Image  ----------*/
+
+.blog-post-section {
+
+    .blog-col-img,
+    .blog-col-post {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+
+        &.blog-col-post {
+            width: 75%;
+        }
     }
 }
