@@ -10066,7 +10066,7 @@ footer div.copyright p {
   border-width: 1.95px;
 }
 
-/*----------  Hero Image  ----------*/
+/*----------  Hero Image Section ----------*/
 .blog-post-section .blog-col-img,
 .blog-post-section .blog-col-post {
   display: flex;
@@ -10077,4 +10077,9 @@ footer div.copyright p {
 .blog-post-section .blog-col-img.blog-col-post,
 .blog-post-section .blog-col-post.blog-col-post {
   width: 75%;
+}
+
+/*----------  Blog Section  ----------*/
+.blog-post-section .row {
+  height: 450px;
 }

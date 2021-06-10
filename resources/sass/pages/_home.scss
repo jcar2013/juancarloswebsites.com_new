@@ -32,7 +32,7 @@
     }
 }
 
-/*----------  Hero Image  ----------*/
+/*----------  Hero Image Section ----------*/
 
 .blog-post-section {
 
@@ -46,5 +46,13 @@
         &.blog-col-post {
             width: 75%;
         }
+    }
+}
+
+/*----------  Blog Section  ----------*/
+
+.blog-post-section {
+    .row {
+        height: 450px;
     }
 }

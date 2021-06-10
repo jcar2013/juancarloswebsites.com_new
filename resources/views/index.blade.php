@@ -22,8 +22,8 @@
             <img src="{{ url('/images/blog-pic-1.jpg') }}" width="500" alt="">
         </div>
 
+        <h2>Struggling to be a better web developer?</h2>
         <div class="col-md-6 blog-col-post">
-            <h2>Struggling to be a better web developer?</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
