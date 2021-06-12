@@ -10066,7 +10066,10 @@ footer div.copyright p {
   border-width: 1.95px;
 }
 
-/*----------  Hero Image Section ----------*/
+/*----------  Blog Section ----------*/
+.blog-post-section {
+  padding: 0 100px 0 100px;
+}
 .blog-post-section .blog-col-img,
 .blog-post-section .blog-col-post {
   display: flex;
@@ -10078,8 +10081,28 @@ footer div.copyright p {
 .blog-post-section .blog-col-post.blog-col-post {
   width: 75%;
 }
+.blog-post-section .blog-col-img.blog-col-post h2,
+.blog-post-section .blog-col-post.blog-col-post h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.blog-post-section .blog-col-img.blog-col-post p,
+.blog-post-section .blog-col-post.blog-col-post p {
+  font-size: 1.05rem;
+}
 
 /*----------  Blog Section  ----------*/
 .blog-post-section .row {
-  height: 450px;
+  height: 600px;
+}
+
+/*----------  Skills Section  ----------*/
+.skills {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.skills span {
+  display: block;
+  font-size: 2rem;
 }

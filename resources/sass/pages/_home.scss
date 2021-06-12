@@ -32,9 +32,10 @@
     }
 }
 
-/*----------  Hero Image Section ----------*/
+/*----------  Blog Section ----------*/
 
 .blog-post-section {
+    padding: 0 100px 0 100px;
 
     .blog-col-img,
     .blog-col-post {
@@ -45,6 +46,15 @@
 
         &.blog-col-post {
             width: 75%;
+
+            h2 {
+                text-transform: uppercase;
+                font-weight   : 600;
+            }
+
+            p {
+                font-size: 1.05rem;
+            }
         }
     }
 }
@@ -53,6 +63,18 @@
 
 .blog-post-section {
     .row {
-        height: 450px;
+        height: 600px;
+    }
+}
+
+/*----------  Skills Section  ----------*/
+.skills {
+    background-color: black;
+    color           : white;
+    text-align      : center;
+
+    span {
+        display  : block;
+        font-size: 2rem;
     }
 }

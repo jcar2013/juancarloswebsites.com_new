@@ -19,11 +19,11 @@
     <div class="row">
 
         <div class="col-md-6 blog-col-img">
-            <img src="{{ url('/images/blog-pic-1.jpg') }}" width="500" alt="">
+            <img src="{{ url('/images/blog-pic-1.jpg') }}" width="700" alt="">
         </div>
 
-        <h2>Struggling to be a better web developer?</h2>
         <div class="col-md-6 blog-col-post">
+            <h2>Struggling to be a better web developer?</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
@@ -38,5 +38,25 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="skills">
+    <h4>
+        I'm an expert in ...
+    </h4>
+
+    <span>
+        Ux Design
+    </span>
+
+    <span>
+        Project Managment
+    </span>
+    <span>
+        Digital Strategy
+    </span>
+    <span>
+        Backend Development
+    </span>
 </div>
 @endsection
