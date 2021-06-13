@@ -10097,12 +10097,29 @@ footer div.copyright p {
 }
 
 /*----------  Skills Section  ----------*/
-.skills {
+#skills {
   background-color: black;
   color: white;
   text-align: center;
+  padding: 40px 0 40px 0;
 }
-.skills span {
+#skills span {
   display: block;
-  font-size: 2rem;
+  font-size: 2.1rem;
+  font-weight: 900;
+}
+
+/*----------  Skills Section  ----------*/
+#recent-blog {
+  color: grey;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#recent-blog span {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: black;
 }

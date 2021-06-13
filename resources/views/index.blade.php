@@ -40,10 +40,10 @@
     </div>
 </div>
 
-<div class="skills">
-    <h4>
+<div id="skills">
+    <h3>
         I'm an expert in ...
-    </h4>
+    </h3>
 
     <span>
         Ux Design
@@ -58,5 +58,12 @@
     <span>
         Backend Development
     </span>
+</div>
+<div id="recent-blog">
+    <h3>Blog</h3>
+    <span>Recent Posts</span>
+    <p>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+    </p>
 </div>
 @endsection
