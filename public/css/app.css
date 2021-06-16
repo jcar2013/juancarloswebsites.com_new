@@ -10070,24 +10070,29 @@ footer div.copyright p {
 .blog-post-section {
   padding: 0 100px 0 100px;
 }
-.blog-post-section .blog-col-img,
-.blog-post-section .blog-col-post {
+.blog-post-section .blog-col,
+.blog-post-section .blog-col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.blog-post-section .blog-col-img.blog-col-post,
-.blog-post-section .blog-col-post.blog-col-post {
+.blog-post-section .blog-col#col-img img,
+.blog-post-section .blog-col#col-img img {
+  width: 450px;
+  height: 325px;
+}
+.blog-post-section .blog-col#col-post,
+.blog-post-section .blog-col#col-post {
   width: 75%;
 }
-.blog-post-section .blog-col-img.blog-col-post h2,
-.blog-post-section .blog-col-post.blog-col-post h2 {
+.blog-post-section .blog-col#col-post h2,
+.blog-post-section .blog-col#col-post h2 {
   text-transform: uppercase;
   font-weight: 600;
 }
-.blog-post-section .blog-col-img.blog-col-post p,
-.blog-post-section .blog-col-post.blog-col-post p {
+.blog-post-section .blog-col#col-post p,
+.blog-post-section .blog-col#col-post p {
   font-size: 1.05rem;
 }
 
