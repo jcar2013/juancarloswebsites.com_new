@@ -46,9 +46,13 @@
 
         &#col-img {
             img {
-                width : 525px;
-                height: 380px;
+                height: 225px;
             }
+
+            // img {
+            //     width : 525px;
+            //     height: 380px;
+            // }
         }
 
         &#col-post {
@@ -58,11 +62,22 @@
                 text-align    : center;
                 text-transform: uppercase;
                 font-weight   : 600;
+                font-size     : 2rem;
             }
 
             p {
-                font-size: 1.05rem;
+                font-size: 75rem;
             }
+
+            // h2 {
+            //     text-align    : center;
+            //     text-transform: uppercase;
+            //     font-weight   : 600;
+            // }
+
+            // p {
+            //     font-size: 1.05rem;
+            // }
         }
     }
 }
