@@ -10077,7 +10077,7 @@ footer div.copyright p {
 
 /*----------  Blog Section ----------*/
 .blog-post-section {
-  padding: 0 100px 0 100px;
+  padding: 25px 0 25px 0;
 }
 .blog-post-section .blog-col,
 .blog-post-section .blog-col {
@@ -10107,10 +10107,6 @@ footer div.copyright p {
 }
 
 /*----------  Blog Section  ----------*/
-.blog-post-section .row {
-  height: 600px;
-}
-
 /*----------  Skills Section  ----------*/
 #skills {
   background-color: black;
