@@ -10063,12 +10063,12 @@ footer div.copyright p {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #ffffff;
-  text-transform: uppercase;
   font-weight: bold;
 }
 .hero-section h2 {
   font-weight: 300;
   font-size: 2.3rem;
+  text-transform: uppercase;
 }
 .hero-section a {
   color: #fff;
@@ -10101,7 +10101,6 @@ footer div.copyright p {
 .blog-post-section .blog-col#col-post p,
 .blog-post-section .blog-col#col-post p {
   font-size: 0.75rem;
-  padding: 30px 0 30px 0;
 }
 
 /*----------  Blog Section  ----------*/
