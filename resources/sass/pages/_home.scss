@@ -35,7 +35,7 @@
 /*----------  Blog Section ----------*/
 
 .blog-post-section {
-    padding: 25px 0 25px 0;
+    padding: 50px 0 50px 0;
 
     .blog-col,
     .blog-col {
@@ -56,17 +56,19 @@
         }
 
         &#col-post {
-            width: 75%;
+            // width: 75%;
 
             h2 {
+                margin        : 30px 0 20px 0;
                 text-align    : center;
                 text-transform: uppercase;
-                font-weight   : 600;
-                font-size     : 2rem;
+                font-weight   : 500;
+                font-size     : 1.2rem;
             }
 
             p {
-                font-size: 75rem;
+                font-size: .75rem;
+                padding  : 30px 0 30px 0;
             }
 
             // h2 {
