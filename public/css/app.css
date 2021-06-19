@@ -10055,6 +10055,7 @@ footer div.copyright p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 575px;
+  padding: 0 15px 0 15px;
   /* Flexbox stuff */
   display: flex;
   justify-content: center;
@@ -10067,7 +10068,7 @@ footer div.copyright p {
 }
 .hero-section h2 {
   font-weight: 300;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   text-transform: uppercase;
 }
 .hero-section a {
