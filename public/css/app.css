@@ -10078,7 +10078,7 @@ footer div.copyright p {
 
 /*----------  Blog Section ----------*/
 .blog-post-section {
-  padding: 50px 0 50px 0;
+  padding: 15px 0 40px 0;
 }
 .blog-post-section .blog-col,
 .blog-post-section .blog-col {
@@ -10090,13 +10090,15 @@ footer div.copyright p {
 .blog-post-section .blog-col#col-img img,
 .blog-post-section .blog-col#col-img img {
   height: 225px;
+  width: 285px;
 }
 .blog-post-section .blog-col#col-post h3,
 .blog-post-section .blog-col#col-post h3 {
-  margin: 30px 0 20px 0;
+  margin: 30px 15px 20px 15px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 1.45rem;
 }
 .blog-post-section .blog-col#col-post p,
 .blog-post-section .blog-col#col-post p {
