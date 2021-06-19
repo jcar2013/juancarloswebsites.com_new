@@ -1,10 +1,13 @@
-.background-image {
-    background-image     : url(https://cdn.pixabay.com/photo/2017/07/31/23/45/pen-2562078_960_720.jpg);
-    background-position  : center center;
-    background-repeat    : no-repeat;
-    background-attachment: fixed;
-    background-size      : cover;
-    height               : 550px;
+/*----------  Hero Image  ----------*/
+
+.hero-section {
+    background              : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
+    background-position     : center center;
+    background-repeat       : no-repeat;
+    // background-attachment: fixed;
+    background-size         : cover;
+    height                  : 575px;
+    padding                 : 0 15px 0 15px;
 
     /* Flexbox stuff */
     display        : flex;
@@ -12,6 +15,115 @@
     align-items    : center;
 
     /* Text styles */
-    text-align: center;
-    color     : #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align : center;
+    color      : #ffffff;
+    font-weight: bold;
+
+    // h1 {
+    //     font-weight: 400;
+    //     font-size  : 3.4rem;
+    // }
+    h2 {
+        font-weight   : 300;
+        font-size     : 2.1rem;
+        text-transform: uppercase;
+    }
+
+    a {
+        color       : #fff;
+        border-width: 1.95px;
+
+    }
+}
+
+/*----------  Blog Section ----------*/
+
+.blog-post-section {
+    padding: 15px 0 40px 0;
+
+    .blog-col,
+    .blog-col {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+
+        &#col-img {
+            img {
+                height: 225px;
+                width : 285px;
+            }
+
+            // img {
+            //     width : 525px;
+            //     height: 380px;
+            // }
+        }
+
+        &#col-post {
+            // width: 75%;
+
+            h3 {
+                margin        : 30px 15px 20px 15px;
+                text-align    : center;
+                text-transform: uppercase;
+                font-weight   : 400;
+                font-size     : 1.45rem;
+            }
+
+            p {
+                font-size: .75rem;
+                padding  : 0 30px 0 30px;
+            }
+
+            // h2 {
+            //     text-align    : center;
+            //     text-transform: uppercase;
+            //     font-weight   : 600;
+            // }
+
+            // p {
+            //     font-size: 1.05rem;
+            // }
+        }
+    }
+}
+
+/*----------  Blog Section  ----------*/
+
+.blog-post-section {
+    .row {
+        // height: 600px;
+    }
+}
+
+/*----------  Skills Section  ----------*/
+#skills {
+    background-color: black;
+    color           : white;
+    text-align      : center;
+    padding         : 40px 0 40px 0;
+
+    span {
+        display    : block;
+        font-size  : 2.1rem;
+        font-weight: 900;
+    }
+}
+
+/*----------  Skills Section  ----------*/
+#recent-blog {
+    color          : grey;
+    height         : 200px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+
+    span {
+        font-size  : 2.1rem;
+        font-weight: 900;
+        color      : black;
+    }
 }
