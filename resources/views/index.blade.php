@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="blog-post-section container-fluid">
+    <div class="featured-post-section container-fluid">
         <div class="row">
 
             <div class="col-12 col-lg-6 blog-col" id="col-img">
@@ -68,8 +68,8 @@
         </p>
     </div>
     <div>
-        <div>
-            <div>
+        <div class="row">
+            <div class="">
                 <h3>
                     PHP
                 </h3>
@@ -79,6 +79,14 @@
                     took a galley of type and scrambled it to make a type specimen book. It has survived not only five
                     centuries, but also the leap into electronic typesetting,
                 </span>
+                <div class="learn-more-btn">
+
+                    <a href="" class="btn btn-outline-secondary btn-lg" role="button">Find Out More</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 blog-col" id="col-img">
+                <img src="{{ url('/images/blog-pic-1.jpg') }}" alt="">
             </div>
         </div>
     </div>

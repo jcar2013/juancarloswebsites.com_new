@@ -10076,37 +10076,36 @@ footer div.copyright p {
   border-width: 1.95px;
 }
 
-/*----------  Blog Section ----------*/
-.blog-post-section {
+/*----------  Featured Post Section ----------*/
+.featured-post-section {
   padding: 15px 0 40px 0;
 }
-.blog-post-section .blog-col,
-.blog-post-section .blog-col {
+.featured-post-section .blog-col,
+.featured-post-section .blog-col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.blog-post-section .blog-col#col-img img,
-.blog-post-section .blog-col#col-img img {
+.featured-post-section .blog-col#col-img img,
+.featured-post-section .blog-col#col-img img {
   height: 225px;
   width: 285px;
 }
-.blog-post-section .blog-col#col-post h3,
-.blog-post-section .blog-col#col-post h3 {
+.featured-post-section .blog-col#col-post h3,
+.featured-post-section .blog-col#col-post h3 {
   margin: 30px 15px 20px 15px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.45rem;
 }
-.blog-post-section .blog-col#col-post p,
-.blog-post-section .blog-col#col-post p {
+.featured-post-section .blog-col#col-post p,
+.featured-post-section .blog-col#col-post p {
   font-size: 0.75rem;
   padding: 0 30px 0 30px;
 }
 
-/*----------  Blog Section  ----------*/
 /*----------  Skills Section  ----------*/
 #skills {
   background-color: black;
@@ -10120,7 +10119,7 @@ footer div.copyright p {
   font-weight: 900;
 }
 
-/*----------  Skills Section  ----------*/
+/*----------  Blog Posts Section  ----------*/
 #recent-blog {
   color: grey;
   height: 200px;
