@@ -145,13 +145,6 @@
                 width : 100%;
             }
 
-            @media only screen and (min-width: 992px) {
-                margin: 20px 0 20px 0;
-
-                img {
-                    height: 500px;
-                }
-            }
 
             // img {
             //     width : 525px;
@@ -181,4 +174,37 @@
         }
     }
 
+}
+
+@media only screen and (min-width: 515px) {
+    #recent-blog {
+
+        .blog-col {
+            &#col-recent-img {
+
+                padding: 20px 0 20px 0;
+
+                img {
+                    height: 425px;
+                    width : 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #recent-blog {
+
+        .blog-col {
+            &#col-recent-img {
+
+                padding: 20px 0 20px 0;
+
+                img {
+                    height: 480px;
+                }
+            }
+        }
+    }
 }

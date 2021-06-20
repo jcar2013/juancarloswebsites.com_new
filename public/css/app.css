@@ -10145,14 +10145,6 @@ footer div.copyright p {
   height: 245px;
   width: 100%;
 }
-@media only screen and (min-width: 992px) {
-  #recent-blog .blog-col#col-recent-img {
-    margin: 20px 0 20px 0;
-  }
-  #recent-blog .blog-col#col-recent-img img {
-    height: 500px;
-  }
-}
 #recent-blog .blog-col#col-recent-post {
   padding: 0 0 0 0;
   background-color: #5f3107;
@@ -10169,4 +10161,22 @@ footer div.copyright p {
 #recent-blog .blog-col#col-recent-post p {
   font-size: 0.75rem;
   padding: 0 30px 0 30px;
+}
+
+@media only screen and (min-width: 515px) {
+  #recent-blog .blog-col#col-recent-img {
+    padding: 20px 0 20px 0;
+  }
+  #recent-blog .blog-col#col-recent-img img {
+    height: 425px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #recent-blog .blog-col#col-recent-img {
+    padding: 20px 0 20px 0;
+  }
+  #recent-blog .blog-col#col-recent-img img {
+    height: 480px;
+  }
 }
