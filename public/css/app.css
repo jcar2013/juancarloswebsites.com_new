@@ -10078,30 +10078,26 @@ footer div.copyright p {
 
 /*----------  Featured Post Section ----------*/
 .featured-post-section {
-  padding: 15px 0 40px 0;
+  padding: 15px 30px 40px 30px;
 }
-.featured-post-section .blog-col,
 .featured-post-section .blog-col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.featured-post-section .blog-col#col-img img,
-.featured-post-section .blog-col#col-img img {
+.featured-post-section .blog-col#col-featured-img img {
   height: 225px;
   width: 285px;
 }
-.featured-post-section .blog-col#col-post h3,
-.featured-post-section .blog-col#col-post h3 {
+.featured-post-section .blog-col#col-featured-post h3 {
   margin: 30px 15px 20px 15px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.45rem;
 }
-.featured-post-section .blog-col#col-post p,
-.featured-post-section .blog-col#col-post p {
+.featured-post-section .blog-col#col-featured-post p {
   font-size: 0.75rem;
   padding: 0 30px 0 30px;
 }
@@ -10121,6 +10117,9 @@ footer div.copyright p {
 
 /*----------  Blog Posts Section  ----------*/
 #recent-blog {
+  padding: 15px 30px 40px 30px;
+}
+#recent-blog .recent-blog-header {
   color: grey;
   height: 200px;
   display: flex;
@@ -10128,8 +10127,46 @@ footer div.copyright p {
   align-items: center;
   flex-direction: column;
 }
-#recent-blog span {
+#recent-blog .recent-blog-header span {
   font-size: 2.1rem;
   font-weight: 900;
   color: black;
+}
+#recent-blog .blog-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#recent-blog .blog-col#col-recent-img {
+  padding: 0 0 0 0;
+}
+#recent-blog .blog-col#col-recent-img img {
+  height: 245px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  #recent-blog .blog-col#col-recent-img {
+    margin: 20px 0 20px 0;
+  }
+  #recent-blog .blog-col#col-recent-img img {
+    height: 500px;
+  }
+}
+#recent-blog .blog-col#col-recent-post {
+  padding: 0 0 0 0;
+  background-color: #5f3107;
+  color: #fff;
+  width: 100%;
+}
+#recent-blog .blog-col#col-recent-post h3 {
+  margin: 0 15px 0 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.45rem;
+}
+#recent-blog .blog-col#col-recent-post p {
+  font-size: 0.75rem;
+  padding: 0 30px 0 30px;
 }
