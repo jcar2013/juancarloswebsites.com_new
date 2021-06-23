@@ -40,16 +40,15 @@
 /*----------  Featured Post Section ----------*/
 
 .featured-post-section {
-    padding: 15px 0 40px 0;
+    padding: 15px 30px 40px 30px;
 
-    .blog-col,
     .blog-col {
         display        : flex;
         justify-content: center;
         align-items    : center;
         flex-direction : column;
 
-        &#col-img {
+        &#col-featured-img {
             img {
                 height: 225px;
                 width : 285px;
@@ -61,7 +60,7 @@
             // }
         }
 
-        &#col-post {
+        &#col-featured-post {
             // width: 75%;
 
             h3 {
@@ -113,16 +112,99 @@
 
 /*----------  Blog Posts Section  ----------*/
 #recent-blog {
-    color          : grey;
-    height         : 200px;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    flex-direction : column;
+    padding: 15px 30px 40px 30px;
 
-    span {
-        font-size  : 2.1rem;
-        font-weight: 900;
-        color      : black;
+    .recent-blog-header {
+
+        color          : grey;
+        height         : 200px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+
+        span {
+            font-size  : 2.1rem;
+            font-weight: 900;
+            color      : black;
+        }
+    }
+
+    .blog-col {
+        display           : flex;
+        justify-content   : center;
+        align-items       : center;
+        flex-direction    : column;
+        // width          : 282px;
+
+        &#col-recent-img {
+            padding: 0 0 0 0;
+
+            img {
+                height: 245px;
+                width : 100%;
+            }
+
+
+            // img {
+            //     width : 525px;
+            //     height: 380px;
+            // }
+        }
+
+        &#col-recent-post {
+            // width: 75%;
+            padding         : 0 0 0 0;
+            background-color: #5f3107;
+            color           : #fff;
+            width           : 100%;
+
+            h3 {
+                margin        : 0 15px 0 15px;
+                text-align    : center;
+                text-transform: uppercase;
+                font-weight   : 400;
+                font-size     : 1.45rem;
+            }
+
+            p {
+                font-size: .75rem;
+                padding  : 0 30px 0 30px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 515px) {
+    #recent-blog {
+
+        .blog-col {
+            &#col-recent-img {
+
+                padding: 20px 0 20px 0;
+
+                img {
+                    height: 425px;
+                    width : 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #recent-blog {
+
+        .blog-col {
+            &#col-recent-img {
+
+                padding: 20px 0 20px 0;
+
+                img {
+                    height: 480px;
+                }
+            }
+        }
     }
 }
