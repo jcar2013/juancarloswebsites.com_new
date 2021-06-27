@@ -35,3 +35,15 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    #blog {
+
+        #blog-posts {
+
+            img {
+                height: 480px;
+            }
+        }
+    }
+}
