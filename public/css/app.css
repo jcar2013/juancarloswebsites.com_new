@@ -10048,6 +10048,14 @@ footer div.copyright p {
   padding: 0 100px 0 100px;
 }
 
+#blog h1 {
+  text-align: center;
+}
+#blog #blog-posts img {
+  height: 225px;
+  width: 285px;
+}
+
 /*----------  Hero Image  ----------*/
 .hero-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
