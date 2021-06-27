@@ -1,0 +1,49 @@
+#blog {
+    h1 {
+        text-align: center;
+    }
+
+    #blog-posts {
+        padding: 15px 30px 40px 30px;
+
+
+        .blog-col {
+
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            flex-direction : column;
+        }
+
+        img {
+            height: 245px;
+            width : 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 515px) {
+    #blog {
+
+        #blog-posts {
+
+
+            img {
+                height: 425px;
+                width : 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #blog {
+
+        #blog-posts {
+
+            img {
+                height: 480px;
+            }
+        }
+    }
+}
