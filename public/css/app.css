@@ -10051,9 +10051,18 @@ footer div.copyright p {
 #blog h1 {
   text-align: center;
 }
+#blog #blog-posts {
+  padding: 15px 30px 40px 30px;
+}
+#blog #blog-posts .blog-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 #blog #blog-posts img {
-  height: 225px;
-  width: 285px;
+  height: 245px;
+  width: 100%;
 }
 
 /*----------  Hero Image  ----------*/
