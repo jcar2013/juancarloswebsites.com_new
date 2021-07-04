@@ -17,9 +17,9 @@
                 {{$post->title}}
             </h2>
 
-            <span>
-                By <span>Code with Carlos</span>, 1 day ago
-            </span>
+                <span>
+                    By <span>Code with Carlos</span>, 1 day ago
+                </span>
 
             <p>
                 {{$post->description}}
@@ -27,6 +27,7 @@
 
             <a href="/blog/{{$post->slug}}" class="btn btn-outline-secondary btn-lg" role="button">Read learn-more-btn</a>
 
+            </div>
         </div>
     </div>
     @endforeach

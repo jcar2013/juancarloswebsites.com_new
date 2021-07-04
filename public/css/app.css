@@ -10067,13 +10067,7 @@ footer div.copyright p {
 
 @media only screen and (min-width: 515px) {
   #blog #blog-posts .blog-col#col-blog-img img {
-    height: 350px;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #blog #blog-posts .blog-col#col-blog-img img {
-    height: 460px;
+    height: 370px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -10084,9 +10078,6 @@ footer div.copyright p {
 @media only screen and (min-width: 1400px) {
   #blog #blog-posts .blog-col#col-blog-img {
     padding: 15px 80px 40px 80px;
-  }
-  #blog #blog-posts .blog-col#col-blog-img img {
-    height: 550px;
   }
 }
 /*----------  Hero Image  ----------*/
