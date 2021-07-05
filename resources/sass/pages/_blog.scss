@@ -4,7 +4,7 @@
     }
 
     #blog-posts {
-        padding: 15px 30px 40px 30px;
+        padding: 15px 60px 40px 60px;
 
 
         .blog-col {
@@ -13,12 +13,22 @@
             justify-content: center;
             align-items    : center;
             flex-direction : column;
+
+            &#col-blog-img {
+                img {
+                    height: 245px;
+                    width : 100%;
+                }
+
+            }
+
+            &#col-blog-post {
+                #blog-author {
+                    font-weight: bold;
+                }
+            }
         }
 
-        img {
-            height: 245px;
-            width : 100%;
-        }
     }
 }
 
@@ -26,23 +36,68 @@
     #blog {
 
         #blog-posts {
+            .blog-col {
 
+                &#col-blog-img {
 
-            img {
-                height: 425px;
-                width : 100%;
+                    img {
+                        height   : 370px;
+                        // width : 90%;
+                    }
+                }
             }
         }
     }
 }
 
-@media only screen and (min-width: 768px) {
+// @media only screen and (min-width: 768px) {
+//     #blog {
+
+//         #blog-posts {
+//             .blog-col {
+
+//                 &#col-blog-img {
+
+//                     img {
+//                         height: 400px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media only screen and (min-width: 992px) {
     #blog {
 
         #blog-posts {
+            .blog-col {
 
-            img {
-                height: 480px;
+                &#col-blog-img {
+
+                    img {
+                        height: 410px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #blog {
+
+        #blog-posts {
+            .blog-col {
+
+                &#col-blog-img {
+
+                    padding: 15px 80px 40px 80px;
+
+                    // img {
+                    //     height: 550px;
+                    // }
+                }
             }
         }
     }

@@ -7,28 +7,38 @@
                 Blog Posts
             </h1>
         </div>
-        <div id="blog-posts" class="row">
-            <div class="col-12 col-lg-6 blog-col">
-                <img src="{{ url('/images/blog-pic-1.jpg') }}" alt="">
+
+        @if (Auth::check())
+            <div class="pt-15 w-4/5 m-auto">
+                <a href="/blog/create" class="">Create Post</a>
             </div>
-            <div class="col-12 col-lg-6 blog-col">
-                <h2>
-                    Learn how to write Laravel Code
-                </h2>
+        @endif
 
-                <span>
-                    By <span>Code with Carlos</span>, 1 day ago
-                </span>
+        @foreach ($posts as $post)
+            <div id="blog-posts" class="row">
+                <div class="col-12 col-lg-6 blog-col" id="col-blog-img">
+                    <img src="{{ url('/images/blog-pic-1.jpg') }}" alt="">
+                </div>
+                <div class="col-12 col-lg-6 blog-col" id="col-blog-post">
+                    <h2>
+                        {{ $post->title }}
+                    </h2>
 
-                <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting,
-                </p>
+                    <span>
+                        By <span id="blog-author">{{ $post->user->name }}</span>, Created on
+                        {{ date('jS M Y', strtotime($post->updated_at)) }}
+                    </span>
 
-                <a href="" class="btn btn-outline-secondary btn-lg" role="button">Read learn-more-btn</a>
+                    <p>
+                        {{ $post->description }}
+                    </p>
 
+                    <a href="/blog/{{ $post->slug }}" class="btn btn-outline-secondary btn-lg" role="button">Read
+                        learn-more-btn</a>
+
+                </div>
             </div>
-        </div>
+    </div>
+    @endforeach
     </div>
 @endsection
