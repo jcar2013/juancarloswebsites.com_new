@@ -10064,6 +10064,9 @@ footer div.copyright p {
   height: 245px;
   width: 100%;
 }
+#blog #blog-posts .blog-col#col-blog-post #blog-author {
+  font-weight: bold;
+}
 
 @media only screen and (min-width: 515px) {
   #blog #blog-posts .blog-col#col-blog-img img {
