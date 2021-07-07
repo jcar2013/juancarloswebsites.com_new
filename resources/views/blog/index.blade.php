@@ -8,8 +8,16 @@
             </h1>
         </div>
 
+        @if (session()->has('message'))
+            <div>
+                <p>
+                    {{ session()->get('message') }}
+                </p>
+            </div>
+        @endif
+
         @if (Auth::check())
-            <div class="pt-15 w-4/5 m-auto">
+            <div class="">
                 <a href="/blog/create" class="">Create Post</a>
             </div>
         @endif
