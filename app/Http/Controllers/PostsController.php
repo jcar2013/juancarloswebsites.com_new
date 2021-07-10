@@ -8,6 +8,10 @@ use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class PostsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -78,9 +82,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        //
+        return view('blog.edit')
+            ->with('post', Post::where('slug', $slug)->first());
     }
 
     /**
@@ -90,9 +95,24 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $slug)
     {
-        //
+
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
+        Post::where('slug', $slug)
+            ->update([
+                'title' => $request->input('title'),
+                'description' => $request->input('description'),
+                'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
+                'user_id' => auth()->user()->id
+            ]);
+
+        return redirect('/blog')
+            ->with('message', 'Your post has been updated!');
     }
 
     /**
@@ -101,8 +121,12 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($slug)
     {
-        //
+        $post = Post::where('slug', $slug);
+        $post->delete();
+
+        return redirect('/blog')
+            ->with('message', 'Your post has been deleted!');
     }
 }
