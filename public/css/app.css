@@ -10089,7 +10089,7 @@ footer div.copyright p {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 575px;
+  height: 100vh;
   padding: 0 15px 0 15px;
   /* Flexbox stuff */
   display: flex;
