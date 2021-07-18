@@ -10018,7 +10018,6 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 
 .navbar {
@@ -10037,7 +10036,7 @@ body {
 }
 
 footer {
-  background-color: #02212e;
+  background-color: #000;
   color: #fff;
   padding: 50px 0 50px 0;
 }
@@ -10128,7 +10127,7 @@ footer div.copyright p {
   padding: 30px 30px 30px 30px;
 }
 .intro-section .row {
-  height: 400px;
+  height: 450px;
 }
 .intro-section .row .col-intro {
   display: flex;
@@ -10136,21 +10135,26 @@ footer div.copyright p {
   align-items: center;
   flex-direction: column;
 }
-.intro-section .row .col-intro#col-intro-img img {
-  background-color: rgba(0, 0, 0, 0.65);
-  width: 475px;
-  height: 325px;
+.intro-section .row .col-intro#col-intro-img .intro-image-div {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 355px;
+}
+.intro-section .row .col-intro#col-intro-text {
+  padding: 0 70px;
 }
 .intro-section .row .col-intro#col-intro-text h3 {
   margin: 30px 15px 20px 15px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .intro-section .row .col-intro#col-intro-text p {
-  font-size: 0.9rem;
-  padding: 0 30px 0 30px;
+  font-size: 0.95rem;
 }
 
 /*----------  Skills Section  ----------*/
