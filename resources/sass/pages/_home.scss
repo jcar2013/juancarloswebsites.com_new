@@ -25,9 +25,9 @@
     //     font-size  : 3.4rem;
     // }
     h1 {
-        font-weight   : 300;
-        font-size     : 3.5rem;
-        text-transform: uppercase;
+        font-weight      : 300;
+        font-size        : 4rem;
+        // text-transform: uppercase;
     }
 
     a {
@@ -42,49 +42,53 @@
 .featured-post-section {
     padding: 15px 30px 40px 30px;
 
-    .blog-col {
-        display        : flex;
-        justify-content: center;
-        align-items    : center;
-        flex-direction : column;
+    .row {
+        height: 350px;
 
-        &#col-featured-img {
-            img {
-                height: 225px;
-                width : 285px;
+        .blog-col {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            flex-direction : column;
+
+            &#col-featured-img {
+                img {
+                    height: 225px;
+                    width : 285px;
+                }
+
+                // img {
+                //     width : 525px;
+                //     height: 380px;
+                // }
             }
 
-            // img {
-            //     width : 525px;
-            //     height: 380px;
-            // }
-        }
+            &#col-featured-post {
+                // width: 75%;
 
-        &#col-featured-post {
-            // width: 75%;
+                h3 {
+                    margin        : 30px 15px 20px 15px;
+                    text-align    : center;
+                    text-transform: uppercase;
+                    font-weight   : 400;
+                    font-size     : 1.45rem;
+                }
 
-            h3 {
-                margin        : 30px 15px 20px 15px;
-                text-align    : center;
-                text-transform: uppercase;
-                font-weight   : 400;
-                font-size     : 1.45rem;
+                p {
+                    font-size: .75rem;
+                    padding  : 0 30px 0 30px;
+                }
+
+                // h2 {
+                //     text-align    : center;
+                //     text-transform: uppercase;
+                //     font-weight   : 600;
+                // }
+
+                // p {
+                //     font-size: 1.05rem;
+                // }
             }
-
-            p {
-                font-size: .75rem;
-                padding  : 0 30px 0 30px;
-            }
-
-            // h2 {
-            //     text-align    : center;
-            //     text-transform: uppercase;
-            //     font-weight   : 600;
-            // }
-
-            // p {
-            //     font-size: 1.05rem;
-            // }
         }
     }
 }

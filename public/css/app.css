@@ -3,11 +3,11 @@
 a,
 p,
 span {
-  font-family: "Vollkorn", serif;
+  font-family: "Montserrat", sans-serif;
 }
 h1,
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Vollkorn", serif;
 }
 
 /*!
@@ -10022,7 +10022,9 @@ body {
 }
 
 .navbar {
-  background-color: #02212e;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.678);
 }
 .navbar a {
   color: #fff;
@@ -10113,8 +10115,7 @@ footer div.copyright p {
 }
 .hero-section h1 {
   font-weight: 300;
-  font-size: 3.5rem;
-  text-transform: uppercase;
+  font-size: 4rem;
 }
 .hero-section a {
   color: #fff;
@@ -10125,24 +10126,27 @@ footer div.copyright p {
 .featured-post-section {
   padding: 15px 30px 40px 30px;
 }
-.featured-post-section .blog-col {
+.featured-post-section .row {
+  height: 350px;
+}
+.featured-post-section .row .blog-col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.featured-post-section .blog-col#col-featured-img img {
+.featured-post-section .row .blog-col#col-featured-img img {
   height: 225px;
   width: 285px;
 }
-.featured-post-section .blog-col#col-featured-post h3 {
+.featured-post-section .row .blog-col#col-featured-post h3 {
   margin: 30px 15px 20px 15px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.45rem;
 }
-.featured-post-section .blog-col#col-featured-post p {
+.featured-post-section .row .blog-col#col-featured-post p {
   font-size: 0.75rem;
   padding: 0 30px 0 30px;
 }
