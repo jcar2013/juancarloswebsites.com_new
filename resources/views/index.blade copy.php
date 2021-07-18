@@ -15,15 +15,15 @@
     </div>
 </div>
 
-<div class="intro-section container-fluid">
+<div class="featured-post-section container-fluid">
     <div class="row">
 
-        <div class="col-12 col-lg-6 col-intro" id="col-intro-img">
+        <div class="col-12 col-lg-6 blog-col" id="col-featured-img">
             <img src="{{ url('/images/home-intro.jpg') }}" alt="">
         </div>
 
-        <div class="col-12 col-lg-6 col-intro" id="col-intro-text">
-            <h3>Hi, My name is Juan Carlos</h3>
+        <div class="col-12 col-lg-6 blog-col" id="col-featured-post">
+            <h3>Struggling to be a better web developer?</h3>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
