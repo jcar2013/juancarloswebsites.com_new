@@ -10018,10 +10018,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-}
-
-.main {
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .navbar {
