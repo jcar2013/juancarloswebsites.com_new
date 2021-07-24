@@ -10101,7 +10101,7 @@ footer div.copyright p {
 }
 /*----------  Hero Image  ----------*/
 .hero-section {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-hero-mbl.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10223,6 +10223,8 @@ footer div.copyright p {
 }
 
 @media only screen and (min-width: 515px) {
+  /*----------  Hero Section  ----------*/
+  /*----------  Blog Posts Section  ----------*/
   #recent-blog .blog-col#col-recent-img {
     padding: 20px 0 20px 0;
   }
@@ -10232,6 +10234,34 @@ footer div.copyright p {
   }
 }
 @media only screen and (min-width: 768px) {
+  /*----------  Hero Section  ----------*/
+  .hero-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 15px 0 15px;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Text styles */
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .hero-section h1 {
+    font-weight: 300;
+    font-size: 4rem;
+  }
+  .hero-section a {
+    color: #fff;
+    border-width: 1.95px;
+  }
+
+  /*----------  Blog Posts Section  ----------*/
   #recent-blog .blog-col#col-recent-img {
     padding: 20px 0 20px 0;
   }
