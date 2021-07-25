@@ -1,7 +1,7 @@
 /*----------  Hero Image  ----------*/
 
 .hero-section {
-    background              : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
+    background              : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-hero-mbl.jpg");
     background-position     : center center;
     background-repeat       : no-repeat;
     // background-attachment: fixed;
@@ -39,7 +39,7 @@
     padding: 30px 30px 30px 30px;
 
     .row {
-        height: 450px;
+        // height: 450px;
 
         .col-intro {
             display        : flex;
@@ -50,17 +50,19 @@
             &#col-intro-img {
 
                 .intro-image-div {
-                    background         : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro.jpg");
-                    background-size    : cover;
-                    background-position: center center;
-                    background-repeat  : no-repeat;
-                    width              : 500px;
-                    height             : 355px;
+                    background                     : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro-mbl.jpg");
+                    background-size                : cover;
+                    background-position            : center center;
+                    background-repeat              : no-repeat;
+                    width                          : 295px;
+                    height                         : 270px;
+                    // width                    : 100%;
+                    // height                      : auto;
                 }
             }
 
             &#col-intro-text {
-                padding : 0 70px;
+                padding : 0 10px;
                 // width: 75%;
 
                 h3 {
@@ -177,7 +179,73 @@
 
 }
 
+@media only screen and (min-width: 375px) {
+    /*----------  Intro Section ----------*/
+
+    .intro-section {
+
+        .row {
+            .col-intro {
+
+                &#col-intro-img {
+
+                    .intro-image-div {
+                        width : 350px;
+                        height: 330px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    /*----------  Intro Section ----------*/
+
+    .intro-section {
+
+        .row {
+            .col-intro {
+
+                &#col-intro-img {
+
+                    .intro-image-div {
+                        width : 380px;
+                        height: 330px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 515px) {
+
+    /*----------  Hero Section  ----------*/
+    .hero-section {
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/hero.jpg");
+    }
+
+    .intro-section {
+
+        .row {
+            .col-intro {
+
+                &#col-intro-img {
+
+                    .intro-image-div {
+                        width : 400px;
+                        height: 330px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    /*----------  Blog Posts Section  ----------*/
     #recent-blog {
 
         .blog-col {
@@ -195,6 +263,99 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    /*----------  Hero Section  ----------*/
+    .hero-section {
+        background              : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-hero.jpg");
+        background-position     : center center;
+        background-repeat       : no-repeat;
+        // background-attachment: fixed;
+        background-size         : cover;
+        height                  : 100vh;
+        padding                 : 0 15px 0 15px;
+
+        /* Flexbox stuff */
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        /* Text styles */
+        font-family: 'Roboto', sans-serif;
+        text-align : center;
+        color      : #ffffff;
+        font-weight: bold;
+
+        h1 {
+            font-weight      : 300;
+            font-size        : 4rem;
+            // text-transform: uppercase;
+        }
+
+        a {
+            color       : #fff;
+            border-width: 1.95px;
+
+        }
+    }
+
+    /*----------  Intro Section ----------*/
+
+    .intro-section {
+        padding: 30px 30px 30px 30px;
+
+        .row {
+            height: 450px;
+
+            .col-intro {
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                flex-direction : column;
+
+                &#col-intro-img {
+
+                    .intro-image-div {
+                        background         : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro.jpg");
+                        background-size    : cover;
+                        background-position: center center;
+                        background-repeat  : no-repeat;
+                        width              : 500px;
+                        height             : 355px;
+                    }
+                }
+
+                &#col-intro-text {
+                    padding : 0 70px;
+                    // width: 75%;
+
+                    h3 {
+                        margin        : 30px 15px 20px 15px;
+                        text-align    : center;
+                        text-transform: uppercase;
+                        font-weight   : 400;
+                        font-size     : 1.8rem;
+                    }
+
+                    p {
+                        font-size   : .95rem;
+                        // padding  : 0 30px 0 30px;
+                    }
+
+                    // h2 {
+                    //     text-align    : center;
+                    //     text-transform: uppercase;
+                    //     font-weight   : 600;
+                    // }
+
+                    // p {
+                    //     font-size: 1.05rem;
+                    // }
+                }
+            }
+        }
+    }
+
+    /*----------  Blog Posts Section  ----------*/
     #recent-blog {
 
         .blog-col {
