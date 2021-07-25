@@ -10130,9 +10130,6 @@ footer div.copyright p {
 .intro-section {
   padding: 30px 30px 30px 30px;
 }
-.intro-section .row {
-  height: 450px;
-}
 .intro-section .row .col-intro {
   display: flex;
   justify-content: center;
@@ -10140,15 +10137,15 @@ footer div.copyright p {
   flex-direction: column;
 }
 .intro-section .row .col-intro#col-intro-img .intro-image-div {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro-mbl.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 355px;
+  width: 295px;
+  height: 270px;
 }
 .intro-section .row .col-intro#col-intro-text {
-  padding: 0 70px;
+  padding: 0 10px;
 }
 .intro-section .row .col-intro#col-intro-text h3 {
   margin: 30px 15px 20px 15px;
@@ -10222,8 +10219,27 @@ footer div.copyright p {
   padding: 0 30px 0 30px;
 }
 
+@media only screen and (min-width: 375px) {
+  /*----------  Intro Section ----------*/
+  .intro-section .row .col-intro#col-intro-img .intro-image-div {
+    width: 350px;
+    height: 330px;
+  }
+}
+@media only screen and (min-width: 420px) {
+  /*----------  Intro Section ----------*/
+  .intro-section .row .col-intro#col-intro-img .intro-image-div {
+    width: 380px;
+    height: 330px;
+  }
+}
 @media only screen and (min-width: 515px) {
   /*----------  Hero Section  ----------*/
+  .intro-section .row .col-intro#col-intro-img .intro-image-div {
+    width: 400px;
+    height: 330px;
+  }
+
   /*----------  Blog Posts Section  ----------*/
   #recent-blog .blog-col#col-recent-img {
     padding: 20px 0 20px 0;
@@ -10259,6 +10275,41 @@ footer div.copyright p {
   .hero-section a {
     color: #fff;
     border-width: 1.95px;
+  }
+
+  /*----------  Intro Section ----------*/
+  .intro-section {
+    padding: 30px 30px 30px 30px;
+  }
+  .intro-section .row {
+    height: 450px;
+  }
+  .intro-section .row .col-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .intro-section .row .col-intro#col-intro-img .intro-image-div {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 355px;
+  }
+  .intro-section .row .col-intro#col-intro-text {
+    padding: 0 70px;
+  }
+  .intro-section .row .col-intro#col-intro-text h3 {
+    margin: 30px 15px 20px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  .intro-section .row .col-intro#col-intro-text p {
+    font-size: 0.95rem;
   }
 
   /*----------  Blog Posts Section  ----------*/
