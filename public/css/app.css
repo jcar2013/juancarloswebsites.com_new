@@ -10249,7 +10249,14 @@ footer div.copyright p {
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 605px) {
+  /*----------  Intro Section ----------*/
+  .intro-section .row .col-intro#col-intro-img .intro-image-div {
+    width: 520px;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 665px) {
   /*----------  Hero Section  ----------*/
   .hero-section {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-hero.jpg");
@@ -10280,9 +10287,6 @@ footer div.copyright p {
   /*----------  Intro Section ----------*/
   .intro-section {
     padding: 30px 30px 30px 30px;
-  }
-  .intro-section .row {
-    height: 450px;
   }
   .intro-section .row .col-intro {
     display: flex;
