@@ -262,7 +262,28 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 605px) {
+    /*----------  Intro Section ----------*/
+
+    .intro-section {
+
+        .row {
+            .col-intro {
+
+                &#col-intro-img {
+
+                    .intro-image-div {
+                        width : 520px;
+                        height: 350px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 665px) {
 
     /*----------  Hero Section  ----------*/
     .hero-section {
@@ -304,7 +325,7 @@
         padding: 30px 30px 30px 30px;
 
         .row {
-            height: 450px;
+            // height: 450px;
 
             .col-intro {
                 display        : flex;
