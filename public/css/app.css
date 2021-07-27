@@ -10310,7 +10310,7 @@ footer div.copyright p {
   /*----------  Intro Section ----------*/
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
     width: 560px;
-    height: 355px;
+    height: 260px;
   }
 
   /*----------  Blog Posts Section  ----------*/
@@ -10325,7 +10325,7 @@ footer div.copyright p {
   /*----------  Intro Section ----------*/
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
     width: 600px;
-    height: 355px;
+    height: 260px;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -10339,6 +10339,13 @@ footer div.copyright p {
   /*----------  Intro Section ----------*/
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
     width: 760px;
+    height: 355px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /*----------  Intro Section ----------*/
+  .intro-section .row .col-intro#col-intro-img .intro-image-div {
+    width: 500px;
     height: 355px;
   }
 }

@@ -367,7 +367,7 @@
 
                     .intro-image-div {
                         width : 560px;
-                        height: 355px;
+                        height: 260px;
                     }
                 }
 
@@ -403,7 +403,7 @@
 
                     .intro-image-div {
                         width : 600px;
-                        height: 355px;
+                        height: 260px;
                     }
                 }
 
@@ -437,7 +437,6 @@
 }
 
 @media only screen and (min-width: 920px) {
-
     /*----------  Intro Section ----------*/
 
     .intro-section {
@@ -447,6 +446,27 @@
 
                     .intro-image-div {
                         width : 760px;
+                        height: 355px;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    /*----------  Intro Section ----------*/
+
+    .intro-section {
+        .row {
+            .col-intro {
+                &#col-intro-img {
+
+                    .intro-image-div {
+                        width : 500px;
                         height: 355px;
                     }
                 }
