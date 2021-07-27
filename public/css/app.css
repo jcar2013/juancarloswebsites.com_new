@@ -10250,13 +10250,6 @@ footer div.copyright p {
   }
 }
 @media only screen and (min-width: 605px) {
-  /*----------  Intro Section ----------*/
-  .intro-section .row .col-intro#col-intro-img .intro-image-div {
-    width: 520px;
-    height: 350px;
-  }
-}
-@media only screen and (min-width: 665px) {
   /*----------  Hero Section  ----------*/
   .hero-section {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-hero.jpg");
@@ -10295,7 +10288,7 @@ footer div.copyright p {
     flex-direction: column;
   }
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-intro.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(39, 26, 26, 0.65)), url("/images/home-intro.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -10314,6 +10307,13 @@ footer div.copyright p {
   }
   .intro-section .row .col-intro#col-intro-text p {
     font-size: 0.95rem;
+  }
+}
+@media only screen and (min-width: 665px) {
+  /*----------  Intro Section ----------*/
+  .intro-section .row .col-intro#col-intro-img .intro-image-div {
+    width: 500px;
+    height: 355px;
   }
 
   /*----------  Blog Posts Section  ----------*/
