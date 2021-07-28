@@ -36,7 +36,7 @@
             </p>
             <div class="learn-more-btn">
 
-                <a href="" class="btn btn-outline-secondary btn-lg" role="button">Find Out More</a>
+                <a href="" class="btn btn-outline-secondary btn-md" role="button">Find Out More</a>
             </div>
         </div>
     </div>

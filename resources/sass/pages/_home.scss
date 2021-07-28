@@ -22,7 +22,7 @@
 
     h1 {
         font-weight      : 300;
-        font-size        : 4rem;
+        font-size        : 3.4rem;
         // text-transform: uppercase;
     }
 
@@ -62,7 +62,7 @@
             }
 
             &#col-intro-text {
-                padding : 0 10px;
+                padding : 0 25px;
                 // width: 75%;
 
                 h3 {
@@ -70,11 +70,11 @@
                     text-align    : center;
                     text-transform: uppercase;
                     font-weight   : 400;
-                    font-size     : 1.8rem;
+                    font-size     : 1.4rem;
                 }
 
                 p {
-                    font-size   : .95rem;
+                    font-size   : .70rem;
                     // padding  : 0 30px 0 30px;
                 }
 
@@ -304,8 +304,6 @@
         padding: 30px 30px 30px 30px;
 
         .row {
-            // height: 450px;
-
             .col-intro {
                 display        : flex;
                 justify-content: center;
@@ -325,7 +323,7 @@
                 }
 
                 &#col-intro-text {
-                    padding : 0 70px;
+                    padding : 0 35px;
                     // width: 75%;
 
                     h3 {
