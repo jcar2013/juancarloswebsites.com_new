@@ -501,12 +501,14 @@
 
     .intro-section {
         .row {
+            height: 550px;
+
             .col-intro {
                 &#col-intro-img {
 
                     .intro-image-div {
                         width : 600px;
-                        height: 355px;
+                        height: 450px;
                     }
                 }
 
@@ -516,22 +518,22 @@
     }
 }
 
-@media only screen and (min-width: 1400px) {
-    /*----------  Intro Section ----------*/
+// @media only screen and (min-width: 1400px) {
+//     /*----------  Intro Section ----------*/
 
-    .intro-section {
-        .row {
-            .col-intro {
-                &#col-intro-img {
+//     .intro-section {
+//         .row {
+//             .col-intro {
+//                 &#col-intro-img {
 
-                    .intro-image-div {
-                        width : 700px;
-                        height: 355px;
-                    }
-                }
+//                     .intro-image-div {
+//                         width : 700px;
+//                         height: 355px;
+//                     }
+//                 }
 
 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
