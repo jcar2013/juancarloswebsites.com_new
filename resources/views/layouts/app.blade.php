@@ -5,14 +5,17 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203681835-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+        if (document.location.hostname.search("loc.juancarloswebsites.com/") !== -1) {
+            console.log(document.location.hostname)
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-203681835-1');
         }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-203681835-1');
     </script>
 
     <meta charset="utf-8">
@@ -81,7 +84,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
-                                                                                                    document.getElementById('logout-form').submit();">
+                                                                                                                                                                    document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
