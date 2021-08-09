@@ -10122,9 +10122,12 @@ footer div.copyright p {
   border-width: 1.95px;
 }
 
-/*----------  Featured Post Section ----------*/
+/*----------  Intro Section ----------*/
 .intro-section {
   padding: 30px 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .intro-section .row .col-intro {
   display: flex;
@@ -10343,9 +10346,20 @@ footer div.copyright p {
 }
 @media only screen and (min-width: 992px) {
   /*----------  Intro Section ----------*/
+  .intro-section {
+    height: 475px;
+  }
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
     width: 450px;
     height: 355px;
+  }
+
+  /*----------  Intro Section ----------*/
+  #skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -10361,7 +10375,24 @@ footer div.copyright p {
     height: 550px;
   }
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
-    width: 600px;
+    width: 725px;
+    height: 480px;
+  }
+  .intro-section .row .col-intro#col-intro-text {
+    padding: 0 60px;
+  }
+  .intro-section .row .col-intro#col-intro-text h3 {
+    font-size: 2.4rem;
+  }
+  .intro-section .row .col-intro#col-intro-text p {
+    font-size: 1.2rem;
+  }
+
+  /*----------  Intro Section ----------*/
+  #skills {
     height: 450px;
+  }
+  #skills span {
+    font-size: 2.5rem;
   }
 }

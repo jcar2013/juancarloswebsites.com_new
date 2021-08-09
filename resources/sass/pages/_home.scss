@@ -1,5 +1,4 @@
 /*----------  Hero Image  ----------*/
-
 .hero-section {
     background              : linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-hero-mbl.jpg");
     background-position     : center center;
@@ -33,10 +32,12 @@
     }
 }
 
-/*----------  Featured Post Section ----------*/
-
+/*----------  Intro Section ----------*/
 .intro-section {
-    padding: 30px 30px 30px 30px;
+    padding        : 30px 30px 30px 30px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
 
     .row {
         // height: 450px;
@@ -180,8 +181,8 @@
 }
 
 @media only screen and (min-width: 395px) {
-    /*----------  Intro Section ----------*/
 
+    /*----------  Intro Section ----------*/
     .intro-section {
 
         .row {
@@ -201,8 +202,8 @@
 }
 
 @media only screen and (min-width: 470px) {
-    /*----------  Intro Section ----------*/
 
+    /*----------  Intro Section ----------*/
     .intro-section {
 
         .row {
@@ -299,7 +300,6 @@
     }
 
     /*----------  Intro Section ----------*/
-
     .intro-section {
         padding: 30px 30px 30px 30px;
 
@@ -357,7 +357,6 @@
 @media only screen and (min-width: 655px) {
 
     /*----------  Intro Section ----------*/
-
     .intro-section {
         .row {
             .col-intro {
@@ -393,7 +392,6 @@
 @media only screen and (min-width: 715px) {
 
     /*----------  Intro Section ----------*/
-
     .intro-section {
         .row {
             .col-intro {
@@ -415,7 +413,6 @@
 @media only screen and (min-width: 800px) {
 
     /*----------  Intro Section ----------*/
-
     .intro-section {
         .row {
             .col-intro {
@@ -435,8 +432,8 @@
 }
 
 @media only screen and (min-width: 920px) {
-    /*----------  Intro Section ----------*/
 
+    /*----------  Intro Section ----------*/
     .intro-section {
         .row {
             .col-intro {
@@ -456,9 +453,11 @@
 }
 
 @media only screen and (min-width: 992px) {
-    /*----------  Intro Section ----------*/
 
+    /*----------  Intro Section ----------*/
     .intro-section {
+        height: 475px;
+
         .row {
             .col-intro {
                 &#col-intro-img {
@@ -474,6 +473,15 @@
         }
     }
 
+    /*----------  Intro Section ----------*/
+    #skills {
+        // height         : 445px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -497,8 +505,8 @@
 }
 
 @media only screen and (min-width: 1400px) {
-    /*----------  Intro Section ----------*/
 
+    /*----------  Intro Section ----------*/
     .intro-section {
         .row {
             height: 550px;
@@ -507,13 +515,33 @@
                 &#col-intro-img {
 
                     .intro-image-div {
-                        width : 600px;
-                        height: 450px;
+                        width : 725px;
+                        height: 480px;
                     }
                 }
 
+                &#col-intro-text {
+                    padding: 0 60px;
+
+                    h3 {
+                        font-size: 2.4rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
 
             }
+        }
+    }
+
+    /*----------  Intro Section ----------*/
+    #skills {
+        height: 450px;
+
+        span {
+            font-size: 2.5rem;
         }
     }
 }
