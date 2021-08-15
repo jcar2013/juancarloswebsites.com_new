@@ -10347,7 +10347,7 @@ footer div.copyright p {
 @media only screen and (min-width: 992px) {
   /*----------  Intro Section ----------*/
   .intro-section {
-    height: 475px;
+    height: 485px;
   }
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
     width: 450px;
@@ -10365,17 +10365,17 @@ footer div.copyright p {
 @media only screen and (min-width: 1200px) {
   /*----------  Intro Section ----------*/
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
-    width: 550px;
-    height: 355px;
+    width: 540px;
+    height: 390px;
   }
 }
 @media only screen and (min-width: 1400px) {
   /*----------  Intro Section ----------*/
-  .intro-section .row {
-    height: 550px;
+  .intro-section {
+    height: 610px;
   }
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
-    width: 725px;
+    width: 655px;
     height: 480px;
   }
   .intro-section .row .col-intro#col-intro-text {
