@@ -18,6 +18,17 @@ footer {
         }
     }
 
+    ul#social-links-ul {
+        li {
+            display: inline;
+            margin : 8px;
+
+            a i {
+                font-size: 25px;
+            }
+        }
+    }
+
     div.copyright {
         border-top: 1px solid white;
 
