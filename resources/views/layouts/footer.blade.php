@@ -62,29 +62,15 @@
 
         <div class="col-lg-4">
             <h3>
-                Latest Post
+                Social Links
             </h3>
 
-            <ul class="">
+            <ul id="social-links-ul">
                 <li>
-                    <a href="/">
-                        Whey we love tech
-                    </a>
+                    <a href="https://www.linkedin.com/in/juan-carlos-zamorano-gil-5a5209143/" id="social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="/">
-                        Why we love design
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Why to use Laravel
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Why PHP is the Best
-                    </a>
+                    <a href="https://github.com/jcar2013" id="social-links" target="_blank"><i class="fab fa-github-square"></i></a>
                 </li>
 
             </ul>
