@@ -16354,6 +16354,41 @@ footer div.copyright p {
   padding: 0 30px 0 30px;
 }
 
+/*----------  Contact Us Section  ----------*/
+#contact {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-contact-hero-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+  padding: 0 15px 0 15px;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Text styles */
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+#contact h2 {
+  font-weight: 900;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-family: "Vollkorn", serif;
+}
+#contact span {
+  display: block;
+  padding-bottom: 15px;
+  font-size: 1.1rem;
+}
+#contact a {
+  color: #fff;
+  border-width: 1.95px;
+}
+
 @media only screen and (min-width: 395px) {
   /*----------  Intro Section ----------*/
   .intro-section .row .col-intro#col-intro-img .intro-image-div {
@@ -16442,6 +16477,15 @@ footer div.copyright p {
   }
   .intro-section .row .col-intro#col-intro-text p {
     font-size: 0.95rem;
+  }
+
+  /*----------  Contact Section ----------*/
+  #contact {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/home-contact-hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 550px;
+    background-size: cover;
   }
 }
 @media only screen and (min-width: 655px) {

@@ -62,6 +62,14 @@
         </span>
     </div>
 
+    <div id="contact">
+
+        <h2>Looking to Get Started</h2>
+        <span>Ready to Start your Journy with us. Contact us and together we'll </span>
+        <a href="" class="btn btn-outline-secondary btn-md" role="button">Contact Us</a>
+
+    </div>
+
     {{-- <div id="recent-blog">
         <div class="recent-blog-header">
             <h3>Blog</h3>
