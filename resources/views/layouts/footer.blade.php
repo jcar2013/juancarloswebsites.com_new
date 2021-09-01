@@ -5,7 +5,7 @@
                 Pages
             </h3>
 
-            <ul class="">
+            <ul class="___class_+?2___">
                 <li>
                     <a href="/">
                         Home
@@ -16,11 +16,11 @@
                         Blog
                     </a>
                 </li>
-                <li>
-                    <a href="/login">
-                        Login
-                    </a>
-                </li>
+                {{-- <li> --}}
+                {{-- <a href="/login"> --}}
+                {{-- Login --}}
+                {{-- </a> --}}
+                {{-- </li> --}}
                 <li>
                     <a href="/register">
                         Register
@@ -35,22 +35,22 @@
                 Find Us
             </h3>
 
-            <ul class="">
+            <ul class="___class_+?4___">
                 <li>
                     <a href="/">
                         What we do
                     </a>
                 </li>
-                <li>
-                    <a href="/">
-                        Address
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        Phone
-                    </a>
-                </li>
+                {{-- <li> --}}
+                {{-- <a href="/"> --}}
+                {{-- Address --}}
+                {{-- </a> --}}
+                {{-- </li> --}}
+                {{-- <li> --}}
+                {{-- <a href="/"> --}}
+                {{-- Phone --}}
+                {{-- </a> --}}
+                {{-- </li> --}}
                 <li>
                     <a href="/">
                         Contact
@@ -67,10 +67,12 @@
 
             <ul id="social-links-ul">
                 <li>
-                    <a href="https://www.linkedin.com/in/juan-carlos-zamorano-gil-5a5209143/" id="social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/juan-carlos-zamorano-gil-5a5209143/" id="social-links"
+                        target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="https://github.com/jcar2013" id="social-links" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/jcar2013" id="social-links" target="_blank"><i
+                            class="fab fa-github-square"></i></a>
                 </li>
 
             </ul>
