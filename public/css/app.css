@@ -16576,13 +16576,6 @@ footer div.copyright p {
     font-size: 2.5rem;
   }
 }
-.container {
-  max-width: 500px;
-  margin: 50px auto;
-  text-align: left;
-  font-family: sans-serif;
-}
-
 form {
   border: 1px solid #1A33FF;
   background: #ecf5fc;
