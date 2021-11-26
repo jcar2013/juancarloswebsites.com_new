@@ -3,6 +3,7 @@
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,7 @@ Route::resource('/blog', PostsController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/contact-form', [ContactController::class, 'contactForm']);
+
+Route::post('/contact-form', [ContactController::class, 'storeContactForm'])->name('contact.store');
