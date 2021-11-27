@@ -37,7 +37,7 @@ class ContactController extends Controller
             'subject'    => $request->get('subject'),
             'user_query' => $request->get('message'),
         ], function ($message) use ($request) {
-            $message->from($request->email);
+            $message->from('contactUs@juancarloswebsites.com');
             $message->to('zamoranocarlos13@gmail.com', 'Admin')->subject($request->get('subject'));
         });
 
