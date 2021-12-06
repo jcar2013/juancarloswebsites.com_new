@@ -6,11 +6,11 @@
             </h3>
 
             <ul class="___class_+?2___">
-                <li>
+                {{-- <li>
                     <a href="/">
                         Home
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="/blog">
                         Blog
@@ -38,7 +38,7 @@
             <ul class="___class_+?4___">
                 <li>
                     <a href="/">
-                        What we do
+                        What We Do
                     </a>
                 </li>
                 {{-- <li> --}}
@@ -53,7 +53,7 @@
                 {{-- </li> --}}
                 <li>
                     <a href="/">
-                        Contact
+                        Contact Me
                     </a>
                 </li>
 
@@ -80,7 +80,7 @@
     </div>
     <div class="copyright">
         <p>
-            Copyright 2021 Juancarloswebsites. All Rights Reserved
+            Copyright 2021 juancarloswebsites.com All Rights Reserved
         </p>
     </div>
 </footer>
