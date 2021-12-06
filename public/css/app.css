@@ -16149,6 +16149,11 @@ body {
   padding: 0px;
 }
 
+a:hover {
+  color: #969696;
+  text-decoration: none;
+}
+
 .navbar {
   position: fixed;
   z-index: 5;
@@ -16157,6 +16162,9 @@ body {
 }
 .navbar a {
   color: #fff;
+}
+.navbar a:hover {
+  color: #b4b4b4;
 }
 @media (min-width: 1200px) {
   .navbar div.container {

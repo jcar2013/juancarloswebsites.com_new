@@ -2,15 +2,15 @@
     <div class="row container-fluid">
         <div class="col-lg-4">
             <h3>
-                Pages
+                Other Links
             </h3>
 
             <ul class="___class_+?2___">
-                <li>
+                {{-- <li>
                     <a href="/">
                         Home
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="/blog">
                         Blog
@@ -52,8 +52,8 @@
                 {{-- </a> --}}
                 {{-- </li> --}}
                 <li>
-                    <a href="/">
-                        Contact
+                    <a href="/contact-form">
+                        Contact Me
                     </a>
                 </li>
 
@@ -62,7 +62,7 @@
 
         <div class="col-lg-4">
             <h3>
-                Social Links
+                Connect With Me
             </h3>
 
             <ul id="social-links-ul">
