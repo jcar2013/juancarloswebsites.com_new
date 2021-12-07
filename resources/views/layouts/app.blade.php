@@ -59,8 +59,8 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        <a class="nav-link" href="/">Home</a>
-                        {{-- <a class="nav-link" href="/blog">Blog</a> --}}
+                        {{-- <a class="nav-link" href="/">Home</a> --}}
+                        <a class="nav-link" href="/blog">Blog</a>
 
                         @guest
                             {{-- THIS IS WHERE WE ADD --}}
