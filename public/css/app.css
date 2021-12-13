@@ -16154,7 +16154,11 @@ a:hover {
   text-decoration: none;
 }
 
+#app {
+  min-height: 100vh;
+}
 .navbar {
+  height: 50px;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -16219,6 +16223,9 @@ footer div.copyright p {
   padding: 0 100px 0 100px;
 }
 
+#blog {
+  padding-top: 50px;
+}
 #blog h1 {
   text-align: center;
 }
