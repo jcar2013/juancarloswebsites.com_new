@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div id="contact-me" class="container">
+<div id="contact-me" class="">
 
     <!-- Success message -->
     @if(Session::has('success'))
