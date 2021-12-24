@@ -4,6 +4,7 @@
     background-repeat       : no-repeat;
     // background-attachment: fixed;
     background-size         : cover;
+    height                  : 100vh;
 
     padding-top          : 50px;
     // .container {
@@ -18,8 +19,8 @@
         background: #ecf5fc;
         padding   : 40px 50px 45px;
 
-        width : 500px;
-        height: 520px;
+        width : 600px;
+        height: 600px;
     }
 
     .form-control:focus {
