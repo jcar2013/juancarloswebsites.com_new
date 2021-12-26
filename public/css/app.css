@@ -16195,7 +16195,8 @@ a:hover {
 footer {
   background-color: #000;
   color: #fff;
-  padding: 50px 0 50px 0;
+  padding: 40px 0;
+  height: 200px;
 }
 footer h3 {
   text-align: center;
@@ -16608,7 +16609,7 @@ footer div.copyright p {
   }
 }
 #contact-me {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/contact-hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/contact-hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16617,7 +16618,7 @@ footer div.copyright p {
 }
 #contact-me form {
   border: 1px solid #1A33FF;
-  background: #ecf5fc;
+  background: #00000027;
   padding: 40px 50px 45px;
   width: 600px;
   height: 600px;
