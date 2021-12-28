@@ -16616,8 +16616,14 @@ footer div.copyright p {
   height: calc(100vh - 200px);
   padding-top: 50px;
 }
+#contact-me #contact-info-col {
+  color: #fff;
+}
 #contact-me #contact-info-col #title-text {
   text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 #contact-me #contact-form-col form#contact-me-form {
   border: 1px solid #000;
