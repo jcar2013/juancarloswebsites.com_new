@@ -16605,44 +16605,79 @@ footer div.copyright p {
   }
 }
 #contact-me {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/contact-hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/contact-hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 200px);
   padding-top: 50px;
 }
-#contact-me #contact-info-col {
+#contact-me .row#contact-page-row {
+  height: 100%;
+}
+#contact-me .row#contact-page-row #contact-info-col {
+  height: 100%;
   color: #fff;
 }
-#contact-me #contact-info-col #title-text {
+#contact-me .row#contact-page-row #contact-info-col #title-text {
   text-align: center;
-  font-size: 3.1rem;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-size: 3.43rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 40px 0;
 }
-#contact-me #contact-form-col form#contact-me-form {
+#contact-me .row#contact-page-row #contact-form-col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
   border: 1px solid #000;
-  background: #00000087;
-  padding: 40px 50px 45px;
-  width: 600px;
-  height: 600px;
+  background: #000000d0;
+  padding: 32px 50px;
+  color: #fff;
+  width: 75%;
+  height: 92%;
 }
-#contact-me #contact-form-col form#contact-me-form .form-control:focus {
-  border-color: #000;
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text],
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email],
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form textarea,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  box-shadow: none;
+  border-radius: 0;
+  color: #fff;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text]:focus,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email]:focus,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form textarea:focus,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form select.form-control:focus {
   box-shadow: none;
 }
-#contact-me #contact-form-col form#contact-me-form label {
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form label {
   font-weight: 600;
 }
-#contact-me #contact-form-col form#contact-me-form .error {
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=submit] {
+  background-color: #000;
+  color: white;
+  border-color: #000;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=submit]:hover {
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
+  color: #a2a2a2;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form .error {
   color: red;
   font-weight: 400;
   display: block;
   padding: 6px 0;
   font-size: 14px;
 }
-#contact-me #contact-form-col form#contact-me-form .form-control.error {
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form .form-control.error {
   border-color: red;
   padding: 0.375rem 0.75rem;
 }

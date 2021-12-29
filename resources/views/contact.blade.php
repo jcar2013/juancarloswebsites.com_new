@@ -11,13 +11,26 @@
             </div>
         @endif
 
-        <div class="row">
+        <div class="row" id="contact-page-row">
             <div class="col-md-6">
                 <div id="contact-info-col">
 
                     <h1 id="title-text">
-                        Contact Us
+                        Contact Me
                     </h1>
+
+                    <div class="col-sm-4 offset-sm-4">
+                        <h2 class="contact-details-title">Location</h2>
+                        <p class="contact-details-text">Riverside, California</p>
+                    </div>
+                    <div class="col-sm-4 offset-sm-4">
+                        <h2 class="contact-details-title">Phone</h2>
+                        <p class="contact-details-text">(951)427-4996</p>
+                    </div>
+                    <div class="col-sm-4 offset-sm-4">
+                        <h2 class="contact-details-title">Email</h2>
+                        <p class="contact-details-text">zamoranocarlos13@gmail.com</p>
+                    </div>
 
                 </div>
             </div>
@@ -82,7 +95,7 @@
                         <div class="form-group">
                             <label>Message</label>
                             <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message"
-                                id="message" rows="4"></textarea>
+                                id="message" rows="2"></textarea>
 
                             @if ($errors->has('message'))
                                 <div class="error">
@@ -91,7 +104,7 @@
                             @endif
                         </div>
 
-                        <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
+                        <input type="submit" name="send" value="Submit" class="btn btn-outline-secondary btn-block">
                     </form>
                 </div>
             </div>
