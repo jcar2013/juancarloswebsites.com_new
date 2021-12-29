@@ -1,5 +1,5 @@
 #contact-me {
-    background              : linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/images/contact-hero.jpg");
+    background              : linear-gradient(0deg, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("/images/contact-hero.jpg");
     background-position     : center center;
     background-repeat       : no-repeat;
     // background-attachment: fixed;
@@ -21,13 +21,14 @@
 
 
         #contact-info-col {
-            color: #fff;
+            height: 100%;
+            color : #fff;
 
             #title-text {
-                text-align : center;
-                font-size  : 3.1rem;
-                font-weight: 600;
-                font-family: $second-font;
+                text-align    : center;
+                font-size     : 3.43rem;
+                font-weight   : 500;
+                // font-family: $second-font;
 
                 margin : 0;
                 padding: 40px 0;
@@ -38,17 +39,22 @@
         #contact-form-col {
             height: 100%;
 
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
             form#contact-me-form {
-                border    : 1px solid #000;
-                background: #000000bf;
-                padding   : 80px 50px;
+                border       : 1px solid #000;
+                background   : #000000d0;
+                padding      : 32px 50px;
+                // margin    : 24px auto;
 
                 color: #fff;
 
-                width   : 600px;
-                height  : 100%;
-                position: absolute;
-                right   : 8%;
+                width         : 75%;
+                height        : 92%;
+                // position   : absolute;
+                // right   : 9%;
 
                 // .form-control:focus {
                 //     border-color: #000;
