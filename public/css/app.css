@@ -16640,6 +16640,8 @@ footer div.copyright p {
   color: #fff;
   width: 600px;
   height: 100%;
+  position: absolute;
+  right: 8%;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text],
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email],
