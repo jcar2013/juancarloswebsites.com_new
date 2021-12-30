@@ -21,18 +21,24 @@
 
 
         #contact-info-col {
-            height: 100%;
-            color : #fff;
+            text-align: center;
+            height    : 100%;
+            color     : #fff;
+
 
             #title-text {
-                text-align    : center;
                 font-size     : 3.43rem;
                 font-weight   : 500;
                 // font-family: $second-font;
 
                 margin : 0;
                 padding: 40px 0;
+            }
 
+            .conctact-detail-section {
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
             }
         }
 
@@ -46,13 +52,13 @@
             form#contact-me-form {
                 border       : 1px solid #000;
                 background   : #000000d0;
-                padding      : 32px 50px;
+                padding      : 50px 50px;
                 // margin    : 24px auto;
 
                 color: #fff;
 
-                width         : 75%;
-                height        : 92%;
+                width            : 75%;
+                // height        : 92%;
                 // position   : absolute;
                 // right   : 9%;
 
