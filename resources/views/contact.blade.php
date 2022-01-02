@@ -21,14 +21,23 @@
 
                 <div class="contact-detail-section">
                     <div class="col-sm-6 offset-sm-3">
+                        <i class="fas fa-map-marker-alt"></i>
+
+
                         <h2 class="contact-details-title">Location</h2>
                         <p class="contact-details-text">Riverside, California</p>
                     </div>
                     <div class="col-sm-6 offset-sm-3">
+                        <i class="fas fa-phone"></i>
+
+
                         <h2 class="contact-details-title">Phone</h2>
                         <p class="contact-details-text">(951)427-4996</p>
                     </div>
                     <div class="col-sm-6 offset-sm-3">
+                        <i class="fas fa-envelope"></i>
+
+
                         <h2 class="contact-details-title">Email</h2>
                         <p class="contact-details-text">zamoranocarlos13@gmail.com</p>
                     </div>
