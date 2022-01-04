@@ -35,10 +35,11 @@
                 padding: 40px 0;
             }
 
-            .conctact-detail-section {
-                display        : flex;
-                justify-content: center;
-                align-items    : center;
+            .contact-detail-section {
+                .col-sm-6 {
+                    // display: inline;
+
+                }
             }
         }
 
