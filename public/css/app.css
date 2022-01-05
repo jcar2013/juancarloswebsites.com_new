@@ -16626,6 +16626,9 @@ footer div.copyright p {
   margin: 0;
   padding: 40px 0;
 }
+#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-6 {
+  display: flex;
+}
 #contact-me .row#contact-page-row #contact-form-col {
   height: 100%;
   display: flex;
