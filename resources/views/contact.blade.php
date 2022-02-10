@@ -12,7 +12,7 @@
         @endif
 
         <div class="row" id="contact-page-row">
-            <div class="col-md-5 offset-md-1">
+            <div class="col-md-6 ">
                 <div id="contact-info-col">
 
                     <h1 id="title-text">
@@ -54,7 +54,7 @@
 
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
 
                 <div id="contact-form-col">
 

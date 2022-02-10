@@ -16613,9 +16613,18 @@ footer div.copyright p {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
   padding-top: 50px;
 }
 #contact-me .row#contact-page-row {
+  height: 100%;
+}
+#contact-me .row#contact-page-row #contact-info-col,
+#contact-me .row#contact-page-row #contact-form-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 #contact-me .row#contact-page-row #contact-info-col {
@@ -16633,17 +16642,14 @@ footer div.copyright p {
   display: flex;
 }
 #contact-me .row#contact-page-row #contact-form-col {
-  height: 90%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
   border: 1px solid #000;
   background: #000000d0;
-  padding: 50px 25px;
+  padding: 25px 20px;
   color: #fff;
-  width: 95%;
+  width: 75%;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text],
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email],
