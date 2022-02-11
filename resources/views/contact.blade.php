@@ -20,7 +20,7 @@
                     </h1>
 
                     <div class="contact-detail-section">
-                        <div class="col-sm-6 offset-sm-3">
+                        <div class="col-sm-12">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
@@ -30,7 +30,7 @@
                                 <p class="contact-details-text">Riverside, California</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 offset-sm-3">
+                        <div class="col-sm-12">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -40,7 +40,7 @@
                                 <p class="contact-details-text">(951)427-4996</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 offset-sm-3">
+                        <div class="col-sm-12">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>

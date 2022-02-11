@@ -16161,7 +16161,7 @@ a:hover {
   position: fixed;
   z-index: 5;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 .navbar a {
   color: #fff;
@@ -16641,11 +16641,15 @@ footer div.copyright p {
 #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-6 {
   display: flex;
 }
+#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-6 .contact-detail-icon i {
+  font-size: 40px;
+}
 #contact-me .row#contact-page-row #contact-form-col {
   display: flex;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
   border: 1px solid #000;
+  border-radius: 5px;
   background: #000000d0;
   padding: 25px 20px;
   color: #fff;

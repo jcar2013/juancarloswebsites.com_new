@@ -49,6 +49,11 @@
             .contact-detail-section {
                 .col-sm-6 {
                     display: flex;
+                    .contact-detail-icon{
+                        i {
+                            font-size: 40px;
+                        }
+                    }
 
                 }
             }
@@ -63,6 +68,7 @@
 
             form#contact-me-form {
                 border       : 1px solid #000;
+                border-radius: 5px;
                 background   : #000000d0;
                 padding      : 25px 20px;
                 // margin    : 24px auto;
