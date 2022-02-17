@@ -1,0 +1,86 @@
+#contact-me {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/contact-hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 50px;
+}
+#contact-me .row#contact-page-row {
+  height: 100%;
+}
+#contact-me .row#contact-page-row #contact-info-col,
+#contact-me .row#contact-page-row #contact-form-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#contact-me .row#contact-page-row #contact-info-col {
+  text-align: center;
+  height: 100%;
+  color: #fff;
+}
+#contact-me .row#contact-page-row #contact-info-col #title-text {
+  font-size: 3.43rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 40px 0;
+}
+#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-6 {
+  display: flex;
+}
+#contact-me .row#contact-page-row #contact-form-col {
+  display: flex;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
+  border: 1px solid #000;
+  background: #000000d0;
+  padding: 25px 20px;
+  color: #fff;
+  width: 100%;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text],
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email],
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form textarea,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #fff;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text]:focus,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email]:focus,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form textarea:focus,
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form label {
+  font-weight: 600;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=submit] {
+  background-color: #000;
+  color: white;
+  border-color: #000;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=submit]:hover {
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
+  color: #a2a2a2;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form .error {
+  color: red;
+  font-weight: 400;
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form .form-control.error {
+  border-color: red;
+  padding: 0.375rem 0.75rem;
+}

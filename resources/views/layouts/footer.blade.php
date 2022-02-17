@@ -25,7 +25,7 @@
                     <a href="/register">
                         Register
                     </a>
-                </li> --}}
+                </li>  --}}
 
             </ul>
         </div>

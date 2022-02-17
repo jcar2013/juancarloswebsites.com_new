@@ -12,24 +12,44 @@
         @endif
 
         <div class="row" id="contact-page-row">
-            <div class="col-md-6">
+            <div class="col-md-6 ">
                 <div id="contact-info-col">
 
                     <h1 id="title-text">
                         Contact Me
                     </h1>
 
-                    <div class="col-sm-4 offset-sm-4">
-                        <h2 class="contact-details-title">Location</h2>
-                        <p class="contact-details-text">Riverside, California</p>
-                    </div>
-                    <div class="col-sm-4 offset-sm-4">
-                        <h2 class="contact-details-title">Phone</h2>
-                        <p class="contact-details-text">(951)427-4996</p>
-                    </div>
-                    <div class="col-sm-4 offset-sm-4">
-                        <h2 class="contact-details-title">Email</h2>
-                        <p class="contact-details-text">zamoranocarlos13@gmail.com</p>
+                    <div class="contact-detail-section">
+                        <div class="col-sm-12">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="contact-details-title">Location</h2>
+                                <p class="contact-details-text">Riverside, California</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="contact-details-title">Phone</h2>
+                                <p class="contact-details-text">(951)427-4996</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="contact-details-title">Email</h2>
+                                <p class="contact-details-text">zamoranocarlos13@gmail.com</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
