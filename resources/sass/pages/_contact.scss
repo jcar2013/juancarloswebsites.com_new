@@ -48,9 +48,9 @@
 
             .contact-detail-section {
                 .col-sm-12 {
-                    display        : flex;
-                    justify-content: center;
-                    align-items    : center;
+                    // display        : flex;
+                    // justify-content: center;
+                    // align-items    : center;
 
                     .contact-detail-icon {
                         i {
@@ -194,12 +194,14 @@
                 }
 
                 .contact-detail-section {
-                    .col-sm-6 {
-                        display: flex;
+                    .col-sm-12 {
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : center;
 
                         .contact-detail-icon {
                             i {
-                                font-size: 40px;
+                                font-size: 35px;
                             }
                         }
 

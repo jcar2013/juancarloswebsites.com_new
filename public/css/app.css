@@ -16631,11 +16631,6 @@ footer div.copyright p {
   margin: 0;
   padding: 40px 0;
 }
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon i {
   font-size: 28px;
 }
@@ -16723,11 +16718,13 @@ footer div.copyright p {
     margin: 0;
     padding: 40px 0;
   }
-  #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-6 {
+  #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-6 .contact-detail-icon i {
-    font-size: 40px;
+  #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon i {
+    font-size: 35px;
   }
   #contact-me .row#contact-page-row #contact-form-col {
     display: flex;
