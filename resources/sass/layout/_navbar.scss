@@ -1,12 +1,17 @@
 .navbar {
+    height          : 50px;
     position        : fixed;
     z-index         : 5;
     width           : 100%;
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(0, 0, 0, 0.85);
 
 
     a {
         color: #fff;
+
+        &:hover {
+            color: #b4b4b4;
+        }
     }
 
     div.container {

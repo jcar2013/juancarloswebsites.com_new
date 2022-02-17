@@ -7,6 +7,16 @@ body {
     // overflow-x: hidden;
 }
 
-.main {
-    // overflow: auto;
+a:hover {
+    color          : #969696;
+    text-decoration: none;
+}
+
+#app {
+
+    .main {
+        // min-height : 100vh;
+        // min-height: calc(100vh - 200px);
+        // overflow: auto;
+    }
 }
