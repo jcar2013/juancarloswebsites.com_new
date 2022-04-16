@@ -11,6 +11,10 @@
 
     padding-top: 50px;
 
+    #title-text {
+        margin: 30px 0;
+    }
+
     .row#contact-page-row {
         height: 100%;
 
@@ -76,6 +80,7 @@
                     box-shadow        : none;
                     border-radius     : 0;
                     color             : #fff;
+                    padding: 0.20rem 0.70rem;
                 }
 
                 input[type="text"]:focus,
@@ -89,6 +94,7 @@
 
                 label {
                     font-weight: 600;
+                    margin: 0;
                 }
 
                 input[type="submit"] {
@@ -109,6 +115,10 @@
                     display    : block;
                     padding    : 6px 0;
                     font-size  : 14px;
+                }
+
+                .form-group {
+                    margin-bottom:.75rem;
                 }
 
                 .form-control.error {
