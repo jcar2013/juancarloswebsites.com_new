@@ -13,6 +13,8 @@
 
     #title-text {
         margin: 30px 0;
+        font-weight   : 500;
+        font-size     : 3rem;
     }
 
     .row#contact-page-row {
@@ -32,15 +34,6 @@
         #contact-info-col {
             text-align: center;
             height    : 100%;
-
-
-            #title-text {
-                font-size     : 3.1rem;
-                font-weight   : 500;
-
-                margin : 0;
-                padding: 40px 0;
-            }
 
             .contact-detail-section {
                 .col-sm-12 {
@@ -67,7 +60,7 @@
 
                 color: #fff;
 
-                width            : 65%;
+                width            : 80%;
 
                 input[type="text"],
                 input[type="email"],
@@ -130,24 +123,18 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    #contact-me{
-        height                     : 100vh;
-    }
-
-}
 
 @media only screen and (min-width: 590px) {
     #contact-me {
         background                 : linear-gradient(0deg, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("/images/contact-hero.jpg");
 
+        #title-text {
+            font-size     : 3.43rem;
+        }
+
         .row#contact-page-row {
 
             #contact-info-col {
-
-                #title-text {
-                    font-size     : 3.43rem;
-                }
 
                 .contact-detail-section {
                     .col-sm-12 {
@@ -161,6 +148,13 @@
 
 
         }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    #contact-me{
+        height                     : 100vh;
     }
 
 }
