@@ -36,9 +36,15 @@
             height    : 100%;
 
             .contact-detail-section {
+
+                padding: 20px 0;
                 .col-sm-12 {
+                
+                    padding: 5px 0;
 
                     .contact-detail-icon {
+                        padding: 10px 0;
+
                         i {
                             font-size: 28px;
                         }
@@ -56,11 +62,11 @@
                 border       : .5px solid rgb(96, 96, 96);
                 border-radius: 10px;
                 background   : #000000d0;
-                padding      : 25px 20px;
+                padding      : 30px 35px;
 
                 color: #fff;
 
-                width            : 80%;
+                width            : 85%;
 
                 input[type="text"],
                 input[type="email"],
@@ -74,6 +80,11 @@
                     border-radius     : 0;
                     color             : #fff;
                     padding: 0.20rem 0.70rem;
+                    
+                }
+                
+                .form-group+.form-group{
+                    margin-top: 20px;
                 }
 
                 input[type="text"]:focus,
@@ -117,6 +128,11 @@
                 .form-control.error {
                     border-color: red;
                     padding     : .375rem .75rem;
+                }
+
+                input#contact-submit{
+                    margin-top: 25px;
+                    border-color: #8d8d8d;
                 }
             }
         }
