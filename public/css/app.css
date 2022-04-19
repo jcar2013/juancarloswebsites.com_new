@@ -16629,6 +16629,15 @@ footer div.copyright p {
   text-align: center;
   height: 100%;
 }
+#contact-me .row#contact-page-row #contact-info-col .contact-detail-section {
+  padding: 20px 0;
+}
+#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 {
+  padding: 5px 0;
+}
+#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon {
+  padding: 10px 0;
+}
 #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon i {
   font-size: 28px;
 }
@@ -16639,7 +16648,7 @@ footer div.copyright p {
   border: 0.5px solid #606060;
   border-radius: 10px;
   background: #000000d0;
-  padding: 25px 20px;
+  padding: 30px 35px;
   color: #fff;
   width: 85%;
 }
@@ -16654,6 +16663,9 @@ footer div.copyright p {
   border-radius: 0;
   color: #fff;
   padding: 0.2rem 0.7rem;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form .form-group + .form-group {
+  margin-top: 20px;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text]:focus,
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email]:focus,
@@ -16688,6 +16700,10 @@ footer div.copyright p {
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form .form-control.error {
   border-color: red;
   padding: 0.375rem 0.75rem;
+}
+#contact-me .row#contact-page-row #contact-form-col form#contact-me-form input#contact-submit {
+  margin-top: 25px;
+  border-color: #8d8d8d;
 }
 
 @media only screen and (min-width: 590px) {
