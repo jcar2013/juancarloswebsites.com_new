@@ -96,8 +96,8 @@
 
 
 
-                    <div class="contact-detail-section">
-                        <div class="col-sm-12">
+                    <div class="contact-detail-section row">
+                        <div class="col-xs-6">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
@@ -107,7 +107,7 @@
                                 <p class="contact-details-text">Riverside, California</p>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-xs-6">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -117,7 +117,7 @@
                                 <p class="contact-details-text">(951)427-4996</p>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>

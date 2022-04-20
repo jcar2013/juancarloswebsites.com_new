@@ -16612,7 +16612,7 @@ footer div.copyright p {
 #contact-me #title-text {
   margin: 30px 0;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 #contact-me .row#contact-page-row {
   height: 100%;
@@ -16650,7 +16650,7 @@ footer div.copyright p {
   background: #000000d0;
   padding: 30px 35px;
   color: #fff;
-  width: 85%;
+  width: 98%;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text],
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email],
@@ -16712,11 +16712,6 @@ footer div.copyright p {
   }
   #contact-me #title-text {
     font-size: 3.43rem;
-  }
-  #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media only screen and (min-width: 768px) {
