@@ -20,7 +20,7 @@
     .row#contact-page-row {
         height: 100%;
 
-        #contact-info-col,
+        // #contact-info-col,
         #contact-form-col {
             display        : flex;
             flex-direction : column;
@@ -32,24 +32,18 @@
 
 
         #contact-info-col {
-            text-align: center;
-            height    : 100%;
+            padding: 25px 20px;
 
-            .contact-detail-section {
+            .row>.col-6,
+            .row>.col-12 {
+                text-align: center;
 
-                padding: 20px 0;
-                .col-sm-12 {
-                
-                    padding: 5px 0;
+                .contact-detail-icon {
+                    padding: 10px 0;
 
-                    .contact-detail-icon {
-                        padding: 10px 0;
-
-                        i {
-                            font-size: 28px;
-                        }
+                    i {
+                        font-size: 28px;
                     }
-
                 }
             }
         }
@@ -149,19 +143,6 @@
         }
 
         .row#contact-page-row {
-
-            #contact-info-col {
-
-                .contact-detail-section {
-                    .col-sm-12 {
-                        // display        : flex;
-                        // justify-content: center;
-                        // align-items    : center;
-
-                    }
-                }
-            }
-
 
         }
     }

@@ -16617,7 +16617,6 @@ footer div.copyright p {
 #contact-me .row#contact-page-row {
   height: 100%;
 }
-#contact-me .row#contact-page-row #contact-info-col,
 #contact-me .row#contact-page-row #contact-form-col {
   display: flex;
   flex-direction: column;
@@ -16626,19 +16625,18 @@ footer div.copyright p {
   height: 100%;
 }
 #contact-me .row#contact-page-row #contact-info-col {
+  padding: 25px 20px;
+}
+#contact-me .row#contact-page-row #contact-info-col .row > .col-6,
+#contact-me .row#contact-page-row #contact-info-col .row > .col-12 {
   text-align: center;
-  height: 100%;
 }
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section {
-  padding: 20px 0;
-}
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 {
-  padding: 5px 0;
-}
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon {
+#contact-me .row#contact-page-row #contact-info-col .row > .col-6 .contact-detail-icon,
+#contact-me .row#contact-page-row #contact-info-col .row > .col-12 .contact-detail-icon {
   padding: 10px 0;
 }
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon i {
+#contact-me .row#contact-page-row #contact-info-col .row > .col-6 .contact-detail-icon i,
+#contact-me .row#contact-page-row #contact-info-col .row > .col-12 .contact-detail-icon i {
   font-size: 28px;
 }
 #contact-me .row#contact-page-row #contact-form-col {
