@@ -16612,37 +16612,28 @@ footer div.copyright p {
 #contact-me #title-text {
   margin: 30px 0;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
-#contact-me .row#contact-page-row {
-  height: 100%;
+#contact-me .row#contact-page-row #contact-info-col {
+  padding: 25px 20px;
 }
-#contact-me .row#contact-page-row #contact-info-col,
+#contact-me .row#contact-page-row #contact-info-col .row > .col-6,
+#contact-me .row#contact-page-row #contact-info-col .row > .col-12 {
+  text-align: center;
+}
+#contact-me .row#contact-page-row #contact-info-col .row > .col-6 .contact-detail-icon,
+#contact-me .row#contact-page-row #contact-info-col .row > .col-12 .contact-detail-icon {
+  padding: 10px 0;
+}
+#contact-me .row#contact-page-row #contact-info-col .row > .col-6 .contact-detail-icon i,
+#contact-me .row#contact-page-row #contact-info-col .row > .col-12 .contact-detail-icon i {
+  font-size: 28px;
+}
 #contact-me .row#contact-page-row #contact-form-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-}
-#contact-me .row#contact-page-row #contact-info-col {
-  text-align: center;
-  height: 100%;
-}
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section {
-  padding: 20px 0;
-}
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 {
-  padding: 5px 0;
-}
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon {
-  padding: 10px 0;
-}
-#contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 .contact-detail-icon i {
-  font-size: 28px;
-}
-#contact-me .row#contact-page-row #contact-form-col {
-  display: flex;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
   border: 0.5px solid #606060;
@@ -16650,7 +16641,7 @@ footer div.copyright p {
   background: #000000d0;
   padding: 30px 35px;
   color: #fff;
-  width: 85%;
+  width: 95%;
 }
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=text],
 #contact-me .row#contact-page-row #contact-form-col form#contact-me-form input[type=email],
@@ -16706,21 +16697,29 @@ footer div.copyright p {
   border-color: #8d8d8d;
 }
 
-@media only screen and (min-width: 590px) {
-  #contact-me {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/contact-hero.jpg");
-  }
+@media only screen and (min-width: 480px) {
   #contact-me #title-text {
     font-size: 3.43rem;
   }
-  #contact-me .row#contact-page-row #contact-info-col .contact-detail-section .col-sm-12 {
+  #contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #contact-me {
+    height: 100vh;
+  }
+  #contact-me .row#contact-page-row {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  #contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
+    width: 95%;
+  }
 }
 @media only screen and (min-width: 768px) {
-  #contact-me {
-    height: 100vh;
+  #contact-me .row#contact-page-row #contact-form-col form#contact-me-form {
+    width: 80%;
   }
 }

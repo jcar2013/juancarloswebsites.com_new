@@ -16,7 +16,7 @@
         </h1>
 
         <div class="row" id="contact-page-row">
-            <div class="col-md-6 order-md-last">
+            <div class="col-sm-6 order-sm-last">
 
                 <div id="contact-form-col">
 
@@ -91,13 +91,11 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-6 order-md-first">
+            <div class="col-sm-6 order-sm-first">
                 <div id="contact-info-col">
 
-
-
-                    <div class="contact-detail-section">
-                        <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-6 col-sm-12 col-lg-6">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
@@ -107,7 +105,7 @@
                                 <p class="contact-details-text">Riverside, California</p>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-6 col-sm-12 col-lg-6">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -117,7 +115,9 @@
                                 <p class="contact-details-text">(951)427-4996</p>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
                             <div class="contact-detail-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
@@ -127,11 +127,11 @@
                                 <p class="contact-details-text">zamoranocarlos13@gmail.com</p>
                             </div>
                         </div>
+                        {{-- </div> --}}
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-@endsection
+    @endsection
