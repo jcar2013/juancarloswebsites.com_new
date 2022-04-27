@@ -11,50 +11,12 @@
             </div>
         @endif
 
+        <h1 id="title-text" class="text-center">
+            Contact Me
+        </h1>
+
         <div class="row" id="contact-page-row">
-            <div class="col-md-6 ">
-                <div id="contact-info-col">
-
-                    <h1 id="title-text">
-                        Contact Me
-                    </h1>
-
-                    <div class="contact-detail-section">
-                        <div class="col-sm-12">
-                            <div class="contact-detail-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-
-                            <div>
-                                <h2 class="contact-details-title">Location</h2>
-                                <p class="contact-details-text">Riverside, California</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="contact-detail-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-
-                            <div>
-                                <h2 class="contact-details-title">Phone</h2>
-                                <p class="contact-details-text">(951)427-4996</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="contact-detail-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-
-                            <div>
-                                <h2 class="contact-details-title">Email</h2>
-                                <p class="contact-details-text">zamoranocarlos13@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-6">
+            <div class="col-sm-6 order-sm-last">
 
                 <div id="contact-form-col">
 
@@ -114,8 +76,8 @@
 
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message"
-                                id="message" rows="2"></textarea>
+                            <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
+                                rows="2"></textarea>
 
                             @if ($errors->has('message'))
                                 <div class="error">
@@ -124,10 +86,52 @@
                             @endif
                         </div>
 
-                        <input type="submit" name="send" value="Submit" class="btn btn-outline-secondary btn-block">
+                        <input id="contact-submit" type="submit" name="send" value="Submit"
+                            class="btn btn-outline-secondary btn-block">
                     </form>
                 </div>
             </div>
+            <div class="col-sm-6 order-sm-first">
+                <div id="contact-info-col">
+
+                    <div class="row">
+                        <div class="col-6 col-sm-12 col-lg-6">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="contact-details-title">Location</h2>
+                                <p class="contact-details-text">Riverside, California</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-12 col-lg-6">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="contact-details-title">Phone</h2>
+                                <p class="contact-details-text">(951)427-4996</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="contact-details-title">Email</h2>
+                                <p class="contact-details-text">zamoranocarlos13@gmail.com</p>
+                            </div>
+                        </div>
+                        {{-- </div> --}}
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-@endsection
+    @endsection
