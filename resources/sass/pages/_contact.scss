@@ -18,7 +18,6 @@
     }
 
     .row#contact-page-row {
-        height: 100%;
 
         #contact-info-col {
             padding: 25px 20px;
@@ -44,8 +43,6 @@
             justify-content: center;
             align-items    : center;
     
-            height: 100%;
-
             form#contact-me-form {
                 border       : .5px solid rgb(96, 96, 96);
                 border-radius: 10px;
@@ -54,7 +51,7 @@
 
                 color: #fff;
 
-                width            : 98%;
+                width            : 95%;
 
                 input[type="text"],
                 input[type="email"],
@@ -138,14 +135,64 @@
 
         .row#contact-page-row {
 
+            #contact-form-col {
+                form#contact-me-form {
+                    width: 90%;
+                }
+            }
         }
     }
 
 }
 
-@media only screen and (min-width: 768px) {
-    #contact-me{
+@media only screen and (min-width: 576px) {
+    #contact-me {
         height                     : 100vh;
-    }
 
+        .row#contact-page-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #contact-info-col {
+            }
+
+            #contact-form-col {
+                form#contact-me-form {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    #contact-me {
+
+        .row#contact-page-row {
+
+            #contact-form-col {
+                form#contact-me-form {
+                    // width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #contact-me {
+
+
+        .row#contact-page-row {
+
+            #contact-form-col {
+                
+                
+                form#contact-me-form {
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
