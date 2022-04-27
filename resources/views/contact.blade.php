@@ -20,7 +20,6 @@
 
                 <div id="contact-form-col">
 
-
                     <form action="" id="contact-me-form" method="post" action="{{ route('contact.store') }}">
 
                         @csrf

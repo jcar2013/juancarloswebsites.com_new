@@ -166,20 +166,6 @@
     }
 }
 
-@media only screen and (min-width: 620px) {
-    #contact-me {
-
-        .row#contact-page-row {
-
-            #contact-form-col {
-                form#contact-me-form {
-                    // width: 75%;
-                }
-            }
-        }
-    }
-}
-
 @media only screen and (min-width: 768px) {
     #contact-me {
 
@@ -191,6 +177,36 @@
                 
                 form#contact-me-form {
                     width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #contact-me {
+
+        .row#contact-page-row {
+
+            #contact-form-col {
+                form#contact-me-form {
+                    width: 65%;
+                }
+            }
+
+            #contact-info-col {
+                padding: 25px 40px;
+
+                .contact-detail-icon {
+
+                }
+
+                .contact-details-title {
+                    font-size: 2.1rem;
+                }
+
+                .contact-details-text {
+                    font-size: 1.3rem;
                 }
             }
         }
