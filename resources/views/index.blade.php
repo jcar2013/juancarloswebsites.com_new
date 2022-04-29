@@ -11,8 +11,8 @@
                     </h1>
 
                     <!-- <a href="/blog" class="btn btn-outline-secondary btn-lg" role="button">
-                                    Read More
-                                </a> -->
+                                        Read More
+                                    </a> -->
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
 
             <h2>Looking to Get Started</h2>
             <span>Ready to Start your Journy with us. Contact us and together we'll </span>
-            <a href="" class="btn btn-outline-secondary btn-md" role="button">Contact Us</a>
+            <a href="/contact-form" class="btn btn-outline-secondary btn-md" role="button">Contact Us</a>
 
         </div>
 
