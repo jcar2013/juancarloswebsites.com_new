@@ -29,7 +29,7 @@
                         <span>
                             Select a file
                         </span>
-                        <input type="file" name="image" class="hidden">
+                        <input type="file" name="image" class="">
                     </label>
                 </div>
 

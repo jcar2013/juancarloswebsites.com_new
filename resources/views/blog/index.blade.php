@@ -2,11 +2,22 @@
 
 @section('content')
     <div id="blog" class="container-fluid">
-        <div>
+        {{-- <div>
             <h1>
                 Blog Posts
             </h1>
+        </div> --}}
+        <div id="blog-carousel" class="carousel-slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                @for ($i = 0; $i < count($posts); $i++)
+                    <li data-target="#blog-carousel" data-slide-to="{{ $i }}" class="active"></li>
+                @endfor
+            </ol>
+            <div class="carousel-inner">
+
+            </div>
         </div>
+
 
         @if (session()->has('message'))
             <div>
@@ -25,8 +36,8 @@
         @foreach ($posts as $post)
             <div id="blog-posts" class="row">
                 <div class="col-12 col-lg-6 blog-col" id="col-blog-img">
-                    <img src="{{ url('/images/blog-pic-1.jpg') }}" alt="">
-                    {{-- <img src="{{asset('images/'. $post->image_path}}" alt=""> --}}
+                    {{-- <img src="{{ url('/images/blog-pic-1.jpg') }}" alt=""> --}}
+                    <img src="{{ asset('images/' . $post->image_path) }}" alt="">
                 </div>
                 <div class="col-12 col-lg-6 blog-col" id="col-blog-post">
                     <h2>
