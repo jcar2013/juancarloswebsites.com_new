@@ -16221,24 +16221,11 @@ footer div.copyright p {
 #blog {
   padding-top: 50px;
 }
-#blog h1 {
-  text-align: center;
-}
-#blog #blog-posts {
-  padding: 15px 60px 40px 60px;
-}
-#blog #blog-posts .blog-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#blog #blog-posts .blog-col#col-blog-img img {
-  height: 245px;
+#blog .carousel-item > img {
+  top: 0;
+  left: 0;
   width: 100%;
-}
-#blog #blog-posts .blog-col#col-blog-post #blog-author {
-  font-weight: bold;
+  height: 32rem;
 }
 
 @media only screen and (min-width: 515px) {

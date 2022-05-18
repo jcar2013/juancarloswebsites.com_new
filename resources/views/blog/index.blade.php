@@ -10,11 +10,24 @@
         <div id="blog-carousel" class="carousel-slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 @for ($i = 0; $i < count($posts); $i++)
-                    <li data-target="#blog-carousel" data-slide-to="{{ $i }}" class="active"></li>
+                    <li data-target="#blog-carousel" data-slide-to="{{ $i }}"
+                        class="active{{ $i === 0 ? 'active' : '' }}"></li>
                 @endfor
             </ol>
             <div class="carousel-inner">
-
+                @for ($i = 0; $i < count($posts); $i++)
+                    <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
+                        <img class="slide-{{ $i }}" src="{{ asset('images/' . $posts[$i]->image_path) }}"
+                            alt="">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p>
+                                    {{ $posts[$i]->description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
             </div>
         </div>
 
