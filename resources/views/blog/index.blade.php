@@ -31,11 +31,25 @@
             </div>
         </div>
 
-
         <div class="container marketing">
+            <div class="row">
 
-            @for ($i = 0; $i < count($posts); $i++)
-            @endfor
+                @for ($i = 0; $i < count($posts); $i++)
+                    <div class="col-md-6">
+                        <div class="row no-gutters">
+                            <div>
+                                <h3>{{ $posts[$i]->title }}</h3>
+                                <div class="text-muted">
+                                    {{ date('d-m-Y', strtotime($posts[$i]->updated_at)) }}
+                                </div>
+                                <p class="card-text">
+                                    {{ $posts[$i]->description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
+            </div>
             <hr class="featurette-divider">
 
         </div>
