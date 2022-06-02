@@ -16222,6 +16222,7 @@ footer div.copyright p {
   padding-top: 50px;
 }
 #blog .carousel-item > img {
+  color: black;
   top: 0;
   left: 0;
   width: 100%;

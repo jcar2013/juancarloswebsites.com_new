@@ -17,8 +17,8 @@
             <div class="carousel-inner">
                 @for ($i = 0; $i < count($posts); $i++)
                     <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
-                        <img class="slide-{{ $i }}" src="{{ asset('images/' . $posts[$i]->image_path) }}"
-                            alt="">
+                        <img class="slide-image slide-{{ $i }}"
+                            src="{{ asset('images/' . $posts[$i]->image_path) }}" alt="">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="carousel-caption">
                                 <p>
@@ -33,6 +33,7 @@
 
         <div class="container marketing">
             <div class="row">
+                {{ $posts }}
 
                 @for ($i = 0; $i < count($posts); $i++)
                     <div class="col-md-6">
