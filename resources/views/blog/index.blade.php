@@ -31,9 +31,9 @@
             </div>
         </div>
 
-        <div class="container marketing">
+        <div class="container">
             <div class="row">
-                {{ $posts }}
+                {{-- {{ $posts }} --}}
 
                 @for ($i = 0; $i < count($posts); $i++)
                     <div class="col-md-6">
