@@ -48,6 +48,22 @@
                                 </p>
                             </div>
                         </div>
+
+                        @if (isset(Auth::user()->id) && Auth::user()->id == $posts[$i]->user_id)
+                            <span>
+                                <a href="/blog/{{ $posts[$i]->slug }}/edit">Edit </a>
+                            </span>
+
+                            <span>
+                                <form action="/blog/{{ $posts[$i]->slug }}" method="POST">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit">
+                                        Delete
+                                    </button>
+                                </form>
+                            </span>
+                    @endif
                     </div>
                 @endfor
             </div>
