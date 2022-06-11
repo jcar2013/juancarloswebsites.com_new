@@ -23,6 +23,7 @@
             <form action="/blog" method="POST" enctype="multipart/form-data">
                 @csrf
                 <input type="text" name="title" placeholder="Title..." class="">
+                <textarea name="short_description" cols="30" rows="5" placeholder="Short Description"></textarea>
                 <textarea name="description" id="" cols="30" placeholder="Description..." rows="10"></textarea>
                 <div>
                     <label for="">
