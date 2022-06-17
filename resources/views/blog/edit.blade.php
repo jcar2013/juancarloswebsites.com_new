@@ -20,12 +20,13 @@
             </div>
         @endif
         <div>
+            {{ $post->short_description }}
             <form action="/blog/{{ $post->slug }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <input type="text" name="title" value="{{ $post->title }}" class="">
 
-                <textarea name="short_description" cols="30" rows="5" placeholder="Short Description"></textarea>
+                <textarea name="short_description" cols="30" rows="5" placeholder="Short Description">{{ $post->short_description }}</textarea>
 
                 <textarea name="description" id="" cols="30" placeholder="Description..." rows="10">{{ $post->description }}</textarea>
 

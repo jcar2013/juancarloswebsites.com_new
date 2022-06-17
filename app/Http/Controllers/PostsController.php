@@ -103,12 +103,14 @@ class PostsController extends Controller
         $request->validate([
             'title'       => 'required',
             'description' => 'required',
+            'short_description' => 'required'
         ]);
 
         Post::where('slug', $slug)
             ->update([
                 'title'       => $request->input('title'),
                 'description' => $request->input('description'),
+                'short_description' => $request->input('short_description'),
                 'slug'        => SlugService::createSlug(Post::class, 'slug', $request->title),
                 'user_id'     => auth()->user()->id
             ]);
