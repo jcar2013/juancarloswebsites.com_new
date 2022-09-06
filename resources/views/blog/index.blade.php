@@ -19,10 +19,10 @@
                     <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
                         <img class="slide-image slide-{{ $i }}"
                             src="{{ asset('images/' . $posts[$i]->image_path) }}" alt="">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="container">
                             <div class="carousel-caption">
                                 <p>
-                                    {{ $posts[$i]->description }}
+                                    {{ substr($posts[$i]->description, 0, 350) }}
                                 </p>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                                     {{ date('d-m-Y', strtotime($posts[$i]->updated_at)) }}
                                 </div>
                                 <p class="card-text">
-                                    {{ $posts[$i]->description }}
+                                    {{ substr($posts[$i]->description, 0, 350) }}
                                 </p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                                     </button>
                                 </form>
                             </span>
-                    @endif
+                        @endif
                     </div>
                 @endfor
             </div>
