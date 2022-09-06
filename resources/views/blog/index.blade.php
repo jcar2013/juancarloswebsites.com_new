@@ -21,8 +21,9 @@
                             src="{{ asset('images/' . $posts[$i]->image_path) }}" alt="">
                         <div class="container">
                             <div class="carousel-caption">
+                                <h2>{{ $posts[$i]->title }}</h2>
                                 <p>
-                                    {{ substr($posts[$i]->description, 0, 350) }}
+                                    {{ substr($posts[$i]->description, 0, 115) }}
                                 </p>
                             </div>
                         </div>
@@ -31,39 +32,39 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="all-blogs">
             <div class="row">
                 {{-- {{ $posts }} --}}
 
                 @for ($i = 0; $i < count($posts); $i++)
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="blog-item">
                         <div class="row no-gutters">
-                            <div>
-                                <h3>{{ $posts[$i]->title }}</h3>
-                                <div class="text-muted">
-                                    {{ date('d-m-Y', strtotime($posts[$i]->updated_at)) }}
-                                </div>
-                                <p class="card-text">
-                                    {{ substr($posts[$i]->description, 0, 350) }}
-                                </p>
+                            <h3>{{ $posts[$i]->title }}</h3>
+                            <div class="text-muted">
+                                {{ date('d-m-Y', strtotime($posts[$i]->updated_at)) }}
                             </div>
+                            <p class="card-text">
+                                {{ substr($posts[$i]->description, 0, 250) }}
+                            </p>
+
+
+                            @if (isset(Auth::user()->id) && Auth::user()->id == $posts[$i]->user_id)
+                                <span>
+                                    <a href="/blog/{{ $posts[$i]->slug }}/edit">Edit </a>
+                                </span>
+
+                                <span>
+                                    <form action="/blog/{{ $posts[$i]->slug }}" method="POST">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit">
+                                            Delete
+                                        </button>
+                                    </form>
+                                </span>
+                            @endif
+
                         </div>
-
-                        @if (isset(Auth::user()->id) && Auth::user()->id == $posts[$i]->user_id)
-                            <span>
-                                <a href="/blog/{{ $posts[$i]->slug }}/edit">Edit </a>
-                            </span>
-
-                            <span>
-                                <form action="/blog/{{ $posts[$i]->slug }}" method="POST">
-                                    @csrf
-                                    @method('delete')
-                                    <button type="submit">
-                                        Delete
-                                    </button>
-                                </form>
-                            </span>
-                        @endif
                     </div>
                 @endfor
             </div>

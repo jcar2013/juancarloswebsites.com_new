@@ -16218,18 +16218,34 @@ footer div.copyright p {
   padding: 0 100px 0 100px;
 }
 
-#blog .carousel-item {
+#blog #blog-carousel .carousel-item {
   background-color: black;
 }
-#blog .carousel-item img {
+#blog #blog-carousel .carousel-item img {
   opacity: 0.5;
   top: 0;
   left: 0;
   width: 100%;
   height: 32rem;
 }
-#blog .container {
+#blog #blog-carousel .carousel-item .carousel-caption {
+  right: 10%;
+  left: 10%;
+}
+#blog #blog-carousel .carousel-item .carousel-caption h2 {
+  font-family: -apple-system;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+#blog #blog-carousel .carousel-item .carousel-caption p {
+  font-size: 1.15rem;
+}
+#blog .container#all-blogs {
   margin-top: 15px;
+}
+#blog .container#all-blogs div#blog-item {
+  padding: 40px;
 }
 
 @media only screen and (min-width: 992px) {
