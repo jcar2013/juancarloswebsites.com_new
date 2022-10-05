@@ -39,31 +39,32 @@
                 @for ($i = 0; $i < count($posts); $i++)
                     <div class="col-md-6" id="blog-item">
                         <div class="row no-gutters">
-                            <h3>{{ $posts[$i]->title }}</h3>
-                            <div class="text-muted">
-                                {{ date('d-m-Y', strtotime($posts[$i]->updated_at)) }}
+                            <div class="col">
+                                <h3>{{ $posts[$i]->title }}</h3>
+                                <div class="text-muted">
+                                    {{ date('d-m-Y', strtotime($posts[$i]->updated_at)) }}
+                                </div>
+                                <p class="card-text">
+                                    {{ substr($posts[$i]->description, 0, 150) }}
+                                </p>
+
+
+                                @if (isset(Auth::user()->id) && Auth::user()->id == $posts[$i]->user_id)
+                                    <span>
+                                        <a href="/blog/{{ $posts[$i]->slug }}/edit">Edit </a>
+                                    </span>
+
+                                    <span>
+                                        <form action="/blog/{{ $posts[$i]->slug }}" method="POST">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit">
+                                                Delete
+                                            </button>
+                                        </form>
+                                    </span>
+                                @endif
                             </div>
-                            <p class="card-text">
-                                {{ substr($posts[$i]->description, 0, 250) }}
-                            </p>
-
-
-                            @if (isset(Auth::user()->id) && Auth::user()->id == $posts[$i]->user_id)
-                                <span>
-                                    <a href="/blog/{{ $posts[$i]->slug }}/edit">Edit </a>
-                                </span>
-
-                                <span>
-                                    <form action="/blog/{{ $posts[$i]->slug }}" method="POST">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit">
-                                            Delete
-                                        </button>
-                                    </form>
-                                </span>
-                            @endif
-
                         </div>
                     </div>
                 @endfor

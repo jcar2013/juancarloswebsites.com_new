@@ -16244,8 +16244,17 @@ footer div.copyright p {
 #blog .container#all-blogs {
   margin-top: 15px;
 }
-#blog .container#all-blogs div#blog-item {
-  padding: 40px;
+#blog .container#all-blogs #blog-item .row {
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.25rem;
+  margin-bottom: 20px;
+}
+#blog .container#all-blogs #blog-item .row .col {
+  padding: 25px;
+}
+#blog .container#all-blogs #blog-item .row .col h3 {
+  margin: 0;
 }
 
 @media only screen and (min-width: 992px) {
