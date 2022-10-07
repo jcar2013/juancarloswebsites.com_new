@@ -67,12 +67,10 @@
 
             <ul id="social-links-ul">
                 <li>
-                    <a href="https://www.linkedin.com/in/juan-carlos-zamorano-gil-5a5209143/" id="social-links"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/juan-carlos-zamorano-gil-5a5209143/" id="social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="https://github.com/jcar2013" id="social-links" target="_blank"><i
-                            class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/jcar2013" id="social-links" target="_blank"><i class="fab fa-github-square"></i></a>
                 </li>
 
             </ul>
@@ -80,7 +78,7 @@
     </div>
     <div class="copyright">
         <p>
-            Copyright 2021 juancarloswebsites.com All Rights Reserved
+            Copyright
         </p>
     </div>
 </footer>
