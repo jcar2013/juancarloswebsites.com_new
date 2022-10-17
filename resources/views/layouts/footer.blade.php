@@ -1,4 +1,4 @@
-<footer>
+<footer class="container">
     <div class="row">
         <div class="col-lg-4">
             <h3>
@@ -67,12 +67,10 @@
 
             <ul id="social-links-ul">
                 <li>
-                    <a href="https://www.linkedin.com/in/juan-carlos-zamorano-gil-5a5209143/" id="social-links"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/juan-carlos-zamorano-gil-5a5209143/" id="social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="https://github.com/jcar2013" id="social-links" target="_blank"><i
-                            class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/jcar2013" id="social-links" target="_blank"><i class="fab fa-github-square"></i></a>
                 </li>
 
             </ul>
